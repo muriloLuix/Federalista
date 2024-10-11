@@ -7,11 +7,18 @@
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Style -->
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script -->
+    <script src="assets/js/aos.js" defer></script>
+    <!-- Script -->
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-down">
         <nav class="navigation">
             <div class="imgFederalista">
                 <img src="assets/img/header/logoFederalistaTopo.svg" alt="Logo Federalista">
@@ -51,7 +58,7 @@
     </header>
     <main>
         <!-- Federalista Texto Topo -->
-        <section class="federalistaTop">
+        <section class="federalistaTop" data-aos="zoom-in">
             <h1>FEDERALISTA</h1>
             <div class="states">
                 <div class="brasilia">
@@ -64,9 +71,11 @@
             <p class="slogan">Autonomia é o caminho</p>
         </section>
 
-        <section class="refundarBrasil">
-            <h1>VAMOS JUNTOS REFUNDAR O BRASIL!</h1>
-            <p> O Brasil precisa de uma reorganização do Estado e das suas instituições. E o Federalismo Pleno é a
+        <!-- Refundar o Brasil -->
+        <section class="refundarBrasil" data-aos="fade-up">
+            <h1 data-aos="fade-up">VAMOS JUNTOS REFUNDAR O BRASIL!</h1>
+            <p data-aos="fade-up"> O Brasil precisa de uma reorganização do Estado e das suas instituições. E o
+                Federalismo Pleno é a
                 solução, pois contempla a autonomia legislativa, judiciária, tributária e administrativa aos estados
                 autossuficientes, reposiciona as cidades e vilas com poderes locais próximos dos cidadãos. Os tributos
                 da cidade ficam na cidade. Os tributos do estado federado ficam no mesmo. E o Governo Central, com parte
@@ -79,7 +88,92 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
+
+        <!-- Circulo Azul -->
+        <div class="circleBlue" data-aos="zoom-in">
+            <span>MENOS IMPOSTOS + PODER DE AQUISIÇÃO!</span>
+        </div>
+
+        <!-- Imagem 1 -->
+        <section class="imagem1" data-aos="fade-left">
+            <div>
+                <img src="assets/img/imagemUm/imagem1.svg" alt="Imagem 1">
+            </div>
+        </section>
+
+        <!-- Sistema tributário -->
+        <section class="tributario" data-aos="fade-right">
+            <h1>UM NOVO SISTEMA TRIBUTÁRIO</h1>
+            <p> Diminuição de até 50% ou mais da carga tributária sobre os produtos, tornando-os mais baratos e
+                acessíveis e AUMENTAR O SEU PODER DE COMPRA! para os textos dos dois retângulos. O seu instrumento
+                político-partidário para, juntos e fortes, mudarmos tudo e ter o país de nossos sonhos!</p>
+            <div class="btnSaibaMais">
+                <a href="">Saiba Mais</a>
+            </div>
+        </section>
+
+        <!-- Estado Federado -->
+        <section class="estadoFederado" data-aos="zoom-in">
+            <h1>O SEU ESTADO VERDADEIRAMENTE FEDERADO E AUTÔNOMO</h1>
+            <div class="estadoFederadoItens">
+                <div class="generalState">
+                    <div class="listState">
+                        <nav>
+                            <ul>
+                                <li>Fazer suas próprias leis, inclusive penais e trabalhistas.</li>
+                                <li>Ter e ficar com seus próprios tributos.</li>
+                                <li>Ter um judiciário com Corte Máxima no Estado.</li>
+                                <li>Ter sua própria Educação, Segurança e Processo Eleitoral.</li>
+                                <li>Ter sua própria administração sem interferência federal, dentre outras atribuições e
+                                    funções.</li>
+                                <li>Auxiliar os municípios e microrregiões de forma suplementar.</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tamanhoMaquina">
+                        <h1> O tamanho da máquina pública, da impressionante e humilhante
+                            burocracia e do volume de regulações, tudo será diminuído e racionalizado, reduzindo em
+                            muito os
+                            custos à Sociedade.
+                        </h1>
+                    </div>
+                </div>
+                <div class="divImagemState">
+                    <img src="assets/img/estadoFederado/homemComAMaoPraCima.svg" alt="Homem com a mão para cima">
+                </div>
+            </div>
+        </section>
+
+        <!-- Partidos Políticos -->
+
+        <section class="partidosPoliticos" data-aos="fade-up">
+            <h1>Cidades não precisam de partidos e politicos!</h1>
+            <div class="firstLine">
+                <div class="primeiraImagemPoliticos" data-aos="fade-right">
+                    <img src="assets/img/partidosPoliticos/partidosPoliticos.svg" alt="Foto Cidade">
+                </div>
+                <div class="descriptionPoliticos">
+                    <p data-aos="fade-left">Você e a população da sua cidade precisam de autonomia para contratar ou
+                        eleger um administrador
+                        municipal. Se eleger, de forma independente.</p>
+                    <div class="btnSaibaMais" data-aos="fade-left">
+                        <a href="">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="secondLine">
+                <div class="segundaImagemPoliticos" data-aos="fade-right">
+                    <img src="assets/img/partidosPoliticos/cidade.svg" alt="Cidade">
+                </div>
+                <div class="descriptionPoliticos2">
+                    <h1 data-aos="fade-left">O governo central no federalismo pleno</h1>
+                </div>
+            </div>
+
+        </section>
     </main>
+
+
 </body>
 
 </html>

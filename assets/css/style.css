@@ -3,6 +3,7 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 /* Fonts */
 
@@ -18,9 +19,12 @@
 :root {
     --cor-header: #041229;
     --montserrat: "Montserrat", sans-serif;
+    --garamond: "EB Garamond", serif;
+    --regular: 'Impact Regular';
     --federalista-top: #000E24;
     --cor-federalista-top: #1651B8;
     --branco: #F5F5F7;
+    --vermelho: #FF0000;
 }
 
 /* General Style */
@@ -59,7 +63,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     list-style: none;
     gap: 3em;
 }
@@ -102,7 +106,7 @@ header {
 
 .federalistaTop h1 {
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--regular);
     color: var(--cor-federalista-top);
     font-size: 24rem;
     letter-spacing: -3px;
@@ -154,23 +158,24 @@ header {
 /* Refundar o brasil */
 
 .refundarBrasil h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--regular);
     font-size: 5rem;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
-    letter-spacing: 7px;
+    letter-spacing: 6.5px;
 }
 
 .refundarBrasil p {
     font-family: var(--montserrat);
     text-align: justify;
     margin: 0 auto;
-    width: 70vw;
+    width: 69vw;
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 20px;
 }
 
 .videoThomas {
@@ -179,8 +184,8 @@ header {
     justify-content: center;
     margin: 1em auto;
     background-color: var(--cor-header);
-    width: 70vw;
-    height: 50vh;
+    width: 69vw;
+    height: 47vh;
     border-radius: 10px;
 }
 
@@ -191,3 +196,215 @@ header {
 }
 
 /* Refundar o brasil */
+
+/* Circle Blue */
+
+.circleBlue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em auto;
+    width: 20em;
+    height: 20em;
+    background: #1651B8;
+    border-radius: 50%;
+}
+
+.circleBlue span {
+    color: #fff;
+    font-family: var(--garamond);
+    text-align: center;
+    width: 15vw;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+/* Circle Blue */
+
+/* Imagem 1  */
+
+.imagem1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 69vw;
+    height: 47vh;
+    background-color: var(--vermelho);
+    border-radius: 10px;
+    margin: 4em auto;
+}
+
+.imagem1 img {
+    margin: 0 auto;
+    width: 68vw;
+    height: 45vh;
+}
+
+/* Imagem 1  */
+
+/* Sistema Tributário */
+
+.tributario h1 {
+    font-family: var(--regular);
+    font-size: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, #041229, #0E3F8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 14px;
+}
+
+.tributario p {
+    font-family: var(--montserrat);
+    text-align: justify;
+    margin: 0 auto;
+    width: 69vw;
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+
+.btnSaibaMais {
+    background-color: #00348F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11vw;
+    text-align: center;
+    border-radius: 15px;
+    padding: .5%;
+    font-family: var(--montserrat);
+    position: absolute;
+    right: 14.9vw;
+    margin-top: 2em;
+}
+
+.btnSaibaMais a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sistema Tributário */
+
+/* Estado Federado */
+
+.estadoFederado h1 {
+    margin-top: 5em;
+    font-family: var(--regular);
+    font-size: 2.9rem;
+    text-align: center;
+    background: linear-gradient(to right, #041229, #0E3F8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 6.3px;
+}
+
+.generalState {
+    margin-top: 5em;
+}
+
+.generalState ul {
+    list-style-type: disc;
+}
+
+.generalState ul li {
+    font-family: var(--montserrat);
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 16vw;
+    line-height: 2.5vh;
+    width: 38vw;
+    font-size: 20px;
+}
+
+.generalState ul li::marker {
+    color: #000;
+}
+
+.estadoFederadoItens {
+    display: flex;
+}
+
+.tamanhoMaquina h1 {
+    background: radial-gradient(circle, #D31313, #6D0A0A);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: var(--regular);
+    width: 37vw;
+    text-align: justify;
+    margin-left: 15vw;
+    margin-top: 1.4em;
+    text-transform: uppercase;
+}
+
+.divImagemState {
+    background-color: var(--vermelho);
+    width: 28vw;
+    height: 70vh;
+    margin-top: 5em;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.divImagemState img {
+    width: 26vw;
+    height: 67vh;
+    margin: 0 auto;
+}
+
+/* Partidos Políticios */
+
+.partidosPoliticos h1 {
+    font-size: 5rem;
+    text-align: left;
+    background: linear-gradient(to right, #041229, #0E3F8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: var(--regular);
+    margin-top: 40vh !important;
+    width: 58vw;
+    margin: 0 15vw;
+}
+
+.firstLine,
+.secondLine {
+    display: flex;
+    gap: 4vw;
+    margin-top: 2vh;
+}
+
+.primeiraImagemPoliticos,
+.segundaImagemPoliticos {
+    margin-left: 15vw;
+}
+
+.descriptionPoliticos p {
+    font-family: var(--montserrat);
+    width: 35vw;
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+
+.descriptionPoliticos2 h1 {
+    font-size: 2rem;
+    margin: 0px;
+    margin-top: 1em !important;
+    width: 35vw;
+    font-family: var(--montserrat);
+}
+
+.segundaImagemPoliticos {
+    margin-top: 3vh;
+}
