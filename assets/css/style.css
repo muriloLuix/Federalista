@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Style */
+
+
+:root {
+    --cor-header: #041229;
+    --montserrat: "Montserrat", sans-serif;
+    --federalista-top: #000E24;
+    --cor-federalista-top: #1651B8;
+    --branco: #F5F5F7;
+}
+
+/* General Style */
+
+/* Header Style */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-header);
+    width: 100%;
+    height: 12vh;
+    font-family: var(--montserrat);
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5em;
+}
+
+.imgFederalista {
+    margin-right: 3em;
+}
+
+.headerItens {
+    display: flex;
+    flex-grow: 2;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 3em;
+}
+
+.navigation ul li:nth-last-child(3) {
+    margin-left: auto;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.navigation ul li:hover {
+    list-style-type: none;
+    color: #ffffffb9;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 1.5em;
+}
+
+/* Header Style */
+
+/* Federalista Top Style */
+
+.federalistaTop {
+    background-color: var(--federalista-top);
+    width: 99.1vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.federalistaTop h1 {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--cor-federalista-top);
+    font-size: 24rem;
+    letter-spacing: -3px;
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.states {
+    position: relative;
+    z-index: 1;
+}
+
+.brasilia {
+    margin-bottom: 3vh;
+}
+
+.brasilia,
+.otherStates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brasilia img {
+    height: 3rem;
+}
+
+
+.otherStates img {
+    height: 5rem;
+}
+
+.slogan {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    z-index: 2;
+    font-family: var(--montserrat);
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Federalista Top Style */
+
+/* Refundar o brasil */
+
+.refundarBrasil h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    background: linear-gradient(to right, #041229, #0E3F8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 7px;
+}
+
+.refundarBrasil p {
+    font-family: var(--montserrat);
+    text-align: justify;
+    margin: 0 auto;
+    width: 70vw;
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.videoThomas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    background-color: var(--cor-header);
+    width: 70vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.videoThomas iframe {
+    border-radius: 10px;
+    width: 68vw;
+    height: 45vh;
+}
+
+/* Refundar o brasil */
