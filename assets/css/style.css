@@ -27,6 +27,11 @@
     --vermelho: #FF0000;
 }
 
+main {
+    background-color: var(--branco);
+    width: 100%;
+}
+
 /* General Style */
 
 /* Header Style */
@@ -57,6 +62,19 @@ header {
 .headerItens {
     display: flex;
     flex-grow: 2;
+}
+
+.headerItens ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.headerItens a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .navigation ul {
@@ -95,13 +113,14 @@ header {
 
 .federalistaTop {
     background-color: var(--federalista-top);
-    width: 99.1vw;
+    width: 100%;
     height: 47vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 2rem;
 }
 
 .federalistaTop h1 {
@@ -116,6 +135,7 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: 300;
 }
 
 .states {
@@ -157,6 +177,11 @@ header {
 
 /* Refundar o brasil */
 
+.refundarBrasil {
+    background-color: var(--branco);
+    width: 100%;
+}
+
 .refundarBrasil h1 {
     font-family: var(--regular);
     font-size: 5rem;
@@ -165,6 +190,9 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 6.5px;
+    margin-top: 0px;
+    padding-top: 8vh;
+    font-weight: 300;
 }
 
 .refundarBrasil p {
@@ -191,8 +219,8 @@ header {
 
 .videoThomas iframe {
     border-radius: 10px;
-    width: 68vw;
-    height: 45vh;
+    width: 68vw !important;
+    height: 45vh !important;
 }
 
 /* Refundar o brasil */
@@ -244,14 +272,19 @@ header {
 
 /* Sistema Tributário */
 
+.tributario {
+    width: 100%;
+}
+
 .tributario h1 {
     font-family: var(--regular);
-    font-size: 5rem;
+    font-size: 5rem !important;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 14px;
+    font-weight: 300;
 }
 
 .tributario p {
@@ -294,15 +327,20 @@ header {
 
 /* Estado Federado */
 
+.estadoFederado {
+    width: 100%;
+}
+
 .estadoFederado h1 {
     margin-top: 5em;
     font-family: var(--regular);
-    font-size: 2.9rem;
+    font-size: 2.9rem !important;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 6.3px;
+    font-weight: 300;
 }
 
 .generalState {
@@ -318,7 +356,7 @@ header {
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
-    margin-left: 16vw;
+    margin-left: 11vw;
     line-height: 2.5vh;
     width: 38vw;
     font-size: 20px;
@@ -339,9 +377,10 @@ header {
     font-family: var(--regular);
     width: 37vw;
     text-align: justify;
-    margin-left: 15vw;
+    margin-left: 9.8vw;
     margin-top: 1.4em;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 .divImagemState {
@@ -364,8 +403,12 @@ header {
 
 /* Partidos Políticios */
 
+.partidosPoliticos {
+    width: 100%;
+}
+
 .partidosPoliticos h1 {
-    font-size: 5rem;
+    font-size: 5rem !important;
     text-align: left;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
@@ -373,7 +416,8 @@ header {
     font-family: var(--regular);
     margin-top: 40vh !important;
     width: 58vw;
-    margin: 0 15vw;
+    margin: 0 9.8vw;
+    font-weight: 300;
 }
 
 .firstLine,
@@ -385,7 +429,7 @@ header {
 
 .primeiraImagemPoliticos,
 .segundaImagemPoliticos {
-    margin-left: 15vw;
+    margin-left: 9.8vw;
 }
 
 .descriptionPoliticos p {
@@ -395,16 +439,204 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-size: 20px;
+    text-align: justify;
 }
 
 .descriptionPoliticos2 h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
     margin: 0px;
     margin-top: 1em !important;
     width: 35vw;
     font-family: var(--montserrat);
+    font-weight: 700;
 }
 
 .segundaImagemPoliticos {
     margin-top: 3vh;
+}
+
+.descriptionPoliticos2 ul {
+    font-family: var(--montserrat);
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    margin: 1vw;
+    width: 34vw;
+}
+
+.descriptionPoliticos2 ul li::marker {
+    color: #000;
+}
+
+/* Partidos Políticios */
+
+/* Circle Yellow */
+
+.circleYellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em auto;
+    width: 20em;
+    height: 20em;
+    background: #FFE11F;
+    border-radius: 50%;
+}
+
+.circleYellow span {
+    color: #000;
+    font-family: var(--garamond);
+    text-align: center;
+    width: 15vw;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+/* Circle Yellow */
+
+/* Judiciario Federalismo */
+
+.judiciarioFederalismo h1 {
+    background: linear-gradient(to right, #041229, #0E3F8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: var(--montserrat);
+    margin-left: 15vw;
+    font-weight: 700;
+}
+
+.judiciarioFederalismo p {
+    background: radial-gradient(circle, #00348F, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    margin-left: 15vw;
+    width: 74vw;
+    font-family: var(--montserrat);
+}
+
+/* Judiciario Federalismo */
+
+/* Blue Section */
+
+.blueSection {
+    background-color: #007bff;
+    height: 100vh;
+    width: 100%;
+    border-radius: 17px;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateY(100%);
+    margin-top: 8vh;
+}
+
+.blueSection.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blueSection.exit {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.partido h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    font-family: var(--regular);
+    letter-spacing: 5px;
+    width: 69vw;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+
+/* Blue Section */
+
+/* Tablets */
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 4rem;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .federalistaTop h1 {
+        font-size: 12rem;
+    }
+
+    .videoThomas iframe {
+        width: 80%;
+        height: 315px;
+    }
+
+    .tributario,
+    .estadoFederado,
+    .partidosPoliticos {
+        padding: 4rem;
+    }
+
+    .tributario h1,
+    .estadoFederado h1,
+    .partidosPoliticos h1 {
+        font-size: 3rem;
+    }
+
+    .divImagemState img {
+        width: 80%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    header {
+        padding: 2rem 6rem;
+    }
+
+    .navigation ul {
+        gap: 3rem;
+    }
+
+    .federalistaTop h1 {
+        font-size: 16rem;
+    }
+
+    .videoThomas iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    .tributario,
+    .estadoFederado,
+    .partidosPoliticos {
+        padding: 6rem;
+    }
+
+    .tributario h1,
+    .estadoFederado h1,
+    .partidosPoliticos h1 {
+        font-size: 4rem;
+    }
+
+    .divImagemState img {
+        width: 70%;
+    }
+}
+
+/* Ultra-large devices (4K and beyond) */
+@media (min-width: 2560px) {
+    .federalistaTop h1 {
+        font-size: 20rem;
+    }
+
+    .tributario h1,
+    .estadoFederado h1,
+    .partidosPoliticos h1 {
+        font-size: 5rem;
+    }
 }
