@@ -15,12 +15,17 @@
 
 /* General Style */
 
+@font-face {
+    font-family: "Taruno";
+    src: url(../font/taruno/Fontspring-DEMO-tarunowide-medium.otf);
+}
 
 :root {
     --cor-header: #041229;
     --montserrat: "Montserrat", sans-serif;
     --garamond: "EB Garamond", serif;
     --regular: 'Impact Regular';
+    --taruno: 'Taruno', sans-serif;
     --federalista-top: #000E24;
     --cor-federalista-top: #1651B8;
     --branco: #F5F5F7;
@@ -66,7 +71,6 @@ header {
 
 .headerItens ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
     list-style: none;
     gap: 1.5rem;
@@ -107,6 +111,73 @@ header {
     padding: 0 1.5em;
 }
 
+/* Estilos responsivos */
+
+/* Para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 0 3em;
+    }
+
+    .navigation ul {
+        gap: 1.5em;
+    }
+
+    .imgFederalista {
+        margin-right: 1.5em;
+    }
+
+    header {
+        height: 10vh;
+    }
+}
+
+/* Para telas menores que 768px (smartphones grandes) */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2em;
+    }
+
+    .imgFederalista {
+        margin: 0 0 1em 0;
+    }
+
+    .headerItens ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    header {
+        height: auto;
+    }
+}
+
+/* Para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    .navigation {
+        padding: 0 1em;
+    }
+
+    .headerItens ul {
+        gap: 0.5em;
+    }
+
+    .navigation ul {
+        gap: 0.5em;
+    }
+
+    .navigation a {
+        padding: 0 0.5em;
+    }
+}
+
 /* Header Style */
 
 /* Federalista Top Style */
@@ -127,7 +198,7 @@ header {
     margin: 0;
     font-family: var(--regular);
     color: var(--cor-federalista-top);
-    font-size: 24rem;
+    font-size: 20vw;
     letter-spacing: -3px;
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -329,17 +400,18 @@ header {
 
 .estadoFederado {
     width: 100%;
+    padding: 0 15vw;
 }
 
 .estadoFederado h1 {
     margin-top: 5em;
     font-family: var(--regular);
-    font-size: 2.9rem !important;
+    font-size: 53.3px !important;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
-    letter-spacing: 6.3px;
+    letter-spacing: 3px;
     font-weight: 300;
 }
 
@@ -356,9 +428,7 @@ header {
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
-    margin-left: 11vw;
     line-height: 2.5vh;
-    width: 38vw;
     font-size: 20px;
 }
 
@@ -375,18 +445,13 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-family: var(--regular);
-    width: 37vw;
     text-align: justify;
-    margin-left: 9.8vw;
     margin-top: 1.4em;
     text-transform: uppercase;
     font-weight: 300;
 }
 
 .divImagemState {
-    background-color: var(--vermelho);
-    width: 28vw;
-    height: 70vh;
     margin-top: 5em;
     margin-left: 2vw;
     display: flex;
@@ -399,12 +464,14 @@ header {
     width: 26vw;
     height: 67vh;
     margin: 0 auto;
+    border: 20px solid var(--vermelho);
 }
 
 /* Partidos Políticios */
 
 .partidosPoliticos {
     width: 100%;
+    padding: 0 6vw;
 }
 
 .partidosPoliticos h1 {
@@ -512,8 +579,9 @@ header {
     color: transparent;
     font-size: 20px;
     margin-left: 15vw;
-    width: 74vw;
+    width: 69vw;
     font-family: var(--montserrat);
+    text-align: justify;
 }
 
 /* Judiciario Federalismo */
@@ -521,24 +589,18 @@ header {
 /* Blue Section */
 
 .blueSection {
-    background-color: #007bff;
-    height: 100vh;
+    background-color: #1651B8;
+    min-height: 100vh;
     width: 100%;
-    border-radius: 17px;
-    transition: transform 1s ease, opacity 1s ease;
-    opacity: 0;
-    transform: translateY(100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     margin-top: 8vh;
+    padding-bottom: 10vh;
 }
 
-.blueSection.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.blueSection.exit {
-    opacity: 0;
-    transform: translateY(100%);
+.partido {
+    width: 100%;
+    padding: 0 18rem;
 }
 
 .partido h1 {
@@ -552,91 +614,225 @@ header {
     font-weight: 300;
 }
 
+.partido p {
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--montserrat);
+    margin-top: 7vh;
+    text-align: justify;
+}
+
+/* Uniao Style */
+
+.generalUniao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 8vh;
+}
+
+.textUniao p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 35vw;
+    font-family: var(--montserrat);
+    text-align: justify;
+}
+
+.imgUniao {
+    display: flex;
+    align-items: center;
+    background-color: #041229;
+    width: 30vw;
+    height: 17vh;
+    border-radius: 10px;
+    padding: 1%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imgUniao p {
+    color: #fff;
+    font-family: var(--regular);
+    font-weight: 500;
+    font-size: 32px;
+    width: 20vw;
+}
+
+.imgUniao img {
+    position: relative;
+    left: 1vw;
+    bottom: 5vh;
+    width: 11vw;
+    height: 28vh;
+}
+
+/* Uniao Style */
+
+/* Etapas Style */
+
+.etapas {
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    margin-top: 8vh;
+}
+
+.etapa1 h1 {
+    color: #fff;
+    font-size: 119px;
+    font-family: var(--regular);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.etapa1 ul li {
+    color: rgb(255, 255, 255);
+    font-family: var(--montserrat);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.imgEtapa img {
+    border: 20px solid #FF0000;
+    border-radius: 10px;
+    width: 31vw;
+    height: 86vh;
+}
+
+.esferaVerde {
+    background-color: #16B83E;
+    border-radius: 50%;
+    width: 11vw;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: var(--garamond);
+    font-size: 16px;
+    color: #fff;
+    font-style: italic;
+    right: 12vw;
+}
+
+/* Etapas Style */
+
+/* Minganaquistao Style */
+
+.minganaquistao {
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 8vh;
+    background-color: #041229;
+    width: 70vw;
+    height: 32vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.minganaquistao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-family: var(--regular);
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 39vw;
+    margin-top: 6vh;
+}
+
+.btn1,
+.btn2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.minganaBtn,
+.federalistaBtn {
+    text-decoration: none;
+    font-family: var(--montserrat);
+    color: #fff;
+    background-color: #00348F;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Minganaquistao Style */
+
 
 /* Blue Section */
 
-/* Tablets */
-@media (min-width: 768px) {
-    header {
-        padding: 1rem 4rem;
-    }
+/* Footer Style */
 
-    .navigation ul {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .federalistaTop h1 {
-        font-size: 12rem;
-    }
-
-    .videoThomas iframe {
-        width: 80%;
-        height: 315px;
-    }
-
-    .tributario,
-    .estadoFederado,
-    .partidosPoliticos {
-        padding: 4rem;
-    }
-
-    .tributario h1,
-    .estadoFederado h1,
-    .partidosPoliticos h1 {
-        font-size: 3rem;
-    }
-
-    .divImagemState img {
-        width: 80%;
-    }
+footer {
+    background-color: #fff;
+    width: 100%;
+    height: 60vh;
 }
 
-/* Large Devices (Desktops) */
-@media (min-width: 1024px) {
-    header {
-        padding: 2rem 6rem;
-    }
-
-    .navigation ul {
-        gap: 3rem;
-    }
-
-    .federalistaTop h1 {
-        font-size: 16rem;
-    }
-
-    .videoThomas iframe {
-        width: 560px;
-        height: 315px;
-    }
-
-    .tributario,
-    .estadoFederado,
-    .partidosPoliticos {
-        padding: 6rem;
-    }
-
-    .tributario h1,
-    .estadoFederado h1,
-    .partidosPoliticos h1 {
-        font-size: 4rem;
-    }
-
-    .divImagemState img {
-        width: 70%;
-    }
+.fraseFooter {
+    padding-top: 8vh;
 }
 
-/* Ultra-large devices (4K and beyond) */
-@media (min-width: 2560px) {
-    .federalistaTop h1 {
-        font-size: 20rem;
-    }
+.fraseFooter p {
+    font-size: 40px;
+    color: #1651B8;
+    text-align: center;
+}
 
-    .tributario h1,
-    .estadoFederado h1,
-    .partidosPoliticos h1 {
-        font-size: 5rem;
-    }
+.fraseFooter span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #1651B8;
+    text-align: center;
+}
+
+.imgFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFooter img {
+    margin-top: 6vh;
+    width: 20vw;
+    height: 39vh;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+    gap: 1vw;
+    padding-bottom: 1vh;
+}
+
+.logoEcho img {
+    display: flex;
+    width: 1.5vw;
+    height: 1.5vh;
+}
+
+.textEcho span {
+    font-family: var(--taruno);
+    font-size: 10px;
 }
