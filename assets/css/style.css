@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
 
 /* Fonts */
 
@@ -14,6 +16,29 @@
 }
 
 /* General Style */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0000002f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-federalista-top);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:focus {
+    border-radius: 20px;
+}
+
 
 @font-face {
     font-family: "Taruno";
@@ -26,6 +51,7 @@
     --garamond: "EB Garamond", serif;
     --regular: 'Impact Regular';
     --taruno: 'Taruno', sans-serif;
+    --meow: "Meow Script", cursive;
     --federalista-top: #000E24;
     --cor-federalista-top: #1651B8;
     --branco: #F5F5F7;
@@ -185,7 +211,7 @@ header {
 .federalistaTop {
     background-color: var(--federalista-top);
     width: 100%;
-    height: 47vh;
+    height: 37vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +224,7 @@ header {
     margin: 0;
     font-family: var(--regular);
     color: var(--cor-federalista-top);
-    font-size: 20vw;
+    font-size: 14vw;
     letter-spacing: -3px;
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -207,6 +233,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     font-weight: 300;
+    white-space: nowrap;
 }
 
 .states {
@@ -461,8 +488,9 @@ header {
 }
 
 .divImagemState img {
-    width: 26vw;
+    width: 23vw;
     height: 67vh;
+    object-fit: cover;
     margin: 0 auto;
     border: 20px solid var(--vermelho);
 }
@@ -471,7 +499,7 @@ header {
 
 .partidosPoliticos {
     width: 100%;
-    padding: 0 6vw;
+    padding: 0 5vw;
 }
 
 .partidosPoliticos h1 {
@@ -499,14 +527,22 @@ header {
     margin-left: 9.8vw;
 }
 
+.primeiraImagemPoliticos img,
+.segundaImagemPoliticos img {
+    width: 28vw;
+    height: 35vh;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .descriptionPoliticos p {
     font-family: var(--montserrat);
-    width: 35vw;
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 20px;
     text-align: justify;
+    width: 37vw;
 }
 
 .descriptionPoliticos2 h1 {
@@ -701,13 +737,14 @@ header {
     border-radius: 10px;
     width: 31vw;
     height: 86vh;
+    object-fit: cover;
 }
 
 .esferaVerde {
     background-color: #16B83E;
     border-radius: 50%;
-    width: 11vw;
-    height: 20vh;
+    width: 13em;
+    height: 12em;
     text-align: center;
     display: flex;
     align-items: center;
@@ -717,7 +754,8 @@ header {
     font-size: 16px;
     color: #fff;
     font-style: italic;
-    right: 12vw;
+    right: 1.5vw;
+    top: 63vh;
 }
 
 /* Etapas Style */
@@ -794,15 +832,18 @@ footer {
     font-size: 40px;
     color: #1651B8;
     text-align: center;
+    font-weight: bold;
+    font-family: var(--meow);
 }
 
 .fraseFooter span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 28px;
     color: #1651B8;
     text-align: center;
+    font-family: var(--meow);
 }
 
 .imgFooter {
