@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 
 
 /* Fonts */
@@ -92,7 +94,10 @@ header {
 
 .headerItens {
     display: flex;
+    align-items: center;
     flex-grow: 2;
+    justify-content: center;
+    text-align: center;
 }
 
 .headerItens ul {
@@ -135,73 +140,6 @@ header {
     text-decoration: none;
     color: inherit;
     padding: 0 1.5em;
-}
-
-/* Estilos responsivos */
-
-/* Para telas menores que 1024px (tablets) */
-@media (max-width: 1024px) {
-    .navigation {
-        padding: 0 3em;
-    }
-
-    .navigation ul {
-        gap: 1.5em;
-    }
-
-    .imgFederalista {
-        margin-right: 1.5em;
-    }
-
-    header {
-        height: 10vh;
-    }
-}
-
-/* Para telas menores que 768px (smartphones grandes) */
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2em;
-    }
-
-    .imgFederalista {
-        margin: 0 0 1em 0;
-    }
-
-    .headerItens ul {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .navigation ul {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    header {
-        height: auto;
-    }
-}
-
-/* Para telas menores que 480px (smartphones pequenos) */
-@media (max-width: 480px) {
-    .navigation {
-        padding: 0 1em;
-    }
-
-    .headerItens ul {
-        gap: 0.5em;
-    }
-
-    .navigation ul {
-        gap: 0.5em;
-    }
-
-    .navigation a {
-        padding: 0 0.5em;
-    }
 }
 
 /* Header Style */
@@ -311,14 +249,14 @@ header {
     margin: 1em auto;
     background-color: var(--cor-header);
     width: 69vw;
-    height: 47vh;
+    height: 40em;
     border-radius: 10px;
 }
 
 .videoThomas iframe {
     border-radius: 10px;
-    width: 68vw !important;
-    height: 45vh !important;
+    width: 81em !important;
+    height: 38em !important;
 }
 
 /* Refundar o brasil */
@@ -355,8 +293,6 @@ header {
     justify-content: center;
     width: 69vw;
     height: 47vh;
-    background-color: var(--vermelho);
-    border-radius: 10px;
     margin: 4em auto;
 }
 
@@ -364,6 +300,8 @@ header {
     margin: 0 auto;
     width: 68vw;
     height: 45vh;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 /* Imagem 1  */
@@ -372,6 +310,7 @@ header {
 
 .tributario {
     width: 100%;
+    padding: 0 15vw;
 }
 
 .tributario h1 {
@@ -409,6 +348,7 @@ header {
     position: absolute;
     right: 14.9vw;
     margin-top: 2em;
+    margin-right: .5em;
 }
 
 .btnSaibaMais a {
@@ -492,7 +432,8 @@ header {
     height: 67vh;
     object-fit: cover;
     margin: 0 auto;
-    border: 20px solid var(--vermelho);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 /* Partidos Políticios */
@@ -733,11 +674,11 @@ header {
 }
 
 .imgEtapa img {
-    border: 20px solid #FF0000;
     border-radius: 10px;
     width: 31vw;
     height: 86vh;
     object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .esferaVerde {
@@ -833,7 +774,8 @@ footer {
     color: #1651B8;
     text-align: center;
     font-weight: bold;
-    font-family: var(--meow);
+    font-family: "Playfair", serif;
+    font-style: italic;
 }
 
 .fraseFooter span {
@@ -843,7 +785,8 @@ footer {
     font-size: 28px;
     color: #1651B8;
     text-align: center;
-    font-family: var(--meow);
+    font-family: "Playfair", serif;
+    font-style: italic;
 }
 
 .imgFooter {
