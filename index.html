@@ -26,6 +26,11 @@
             <div class="imgFederalista">
                 <img src="assets/img/header/logoFederalistaTopo.svg" alt="Logo Federalista">
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="headerItens">
                 <ul>
                     <a href="">
@@ -59,6 +64,18 @@
             </div>
         </nav>
     </header>
+
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navigation = document.querySelector('.navigation');
+            const headerItens = document.querySelector('.headerItens');
+
+            hamburger.classList.toggle('active');
+            navigation.classList.toggle('open');
+        }
+    </script>
+
     <main>
         <!-- Federalista Texto Topo -->
         <section class="federalistaTop" data-aos="zoom-in">
@@ -282,6 +299,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <footer>
