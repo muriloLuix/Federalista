@@ -63,6 +63,7 @@
 main {
     background-color: var(--branco);
     width: 100%;
+    overflow-y: hidden;
 }
 
 /* General Style */
@@ -1220,5 +1221,69 @@ footer {
 
     .logoEcho img {
         height: 1.5vh;
+    }
+}
+
+/* Responsividade telas em 852px */
+
+@media screen and (max-width: 832px) {
+    .refundarBrasil h1 {
+        font-size: 2rem;
+    }
+
+    .videoThomas iframe {
+        width: 15em !important;
+        height: 18em !important;
+    }
+
+    .tributario h1 {
+        font-size: 2rem !important;
+    }
+
+    .tributario p {
+        font-size: 20px;
+    }
+
+    .refundarBrasil p {
+        font-size: 20px;
+    }
+
+    .generalState ul li {
+        font-size: 20px;
+    }
+
+    .estadoFederado h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .partidosPoliticos h1 {
+        font-size: 2rem !important;
+        width: 69vw !important;
+    }
+
+    .descriptionPoliticos p {
+        padding: 0px 3rem;
+        font-size: 20px;
+    }
+
+    .descriptionPoliticos2 ul {
+        padding: 0 4rem;
+        width: 18em;
+        font-size: 20px;
+    }
+
+    .judiciarioFederalismo p {
+        font-size: 20px;
+    }
+
+    .imgUniao img {
+        left: 1%;
+        bottom: 12%;
+        width: 8.9em;
+        height: 12.5em;
+    }
+
+    .fraseFooter p {
+        font-size: 2rem;
     }
 }
