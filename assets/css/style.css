@@ -536,7 +536,7 @@ header {
     color: transparent;
     font-size: 1.3rem;
     margin: 1vw;
-    padding: 0 8rem 0 0px;
+    width: 34em;
 }
 
 .descriptionPoliticos2 ul li::marker {
@@ -1024,10 +1024,14 @@ footer {
     }
 
     .navigation {
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column; */
+        align-items: center;
         justify-content: space-between;
         padding: 0 1em;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
     }
 
     .imgFederalista {
@@ -1037,6 +1041,7 @@ footer {
     .headerItens {
         display: none;
         width: 100%;
+        height: 100vh;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -1108,5 +1113,112 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .refundarBrasil h1 {
+        font-size: 2.5rem;
+    }
+
+    .videoThomas iframe {
+        width: 17em !important;
+        height: 18em !important;
+    }
+
+    .videoThomas {
+        width: 69vw;
+        height: 20em;
+    }
+
+    .circleBlue span {
+        width: 36vw;
+    }
+
+    .tributario h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .estadoFederado h1 {
+        font-size: 2rem !important;
+    }
+
+    .partidosPoliticos h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .descriptionPoliticos p {
+        padding: 0px 3rem;
+    }
+
+    .descriptionPoliticos2 h1 {
+        margin: 1rem 3rem 1rem auto !important;
+    }
+
+    .descriptionPoliticos2 ul {
+        padding: 0 4rem;
+        width: 18em;
+    }
+
+    .circleYellow span {
+        width: 36vw;
+    }
+
+    .partido h1 {
+        font-size: 2.5rem;
+    }
+
+    .judiciarioFederalismo h1 {
+        margin: 0px;
+        padding: 0px 4rem;
+        text-align: center;
+    }
+
+    .imgUniao img {
+        left: 1%;
+        bottom: 12.5%;
+        width: 9.9em;
+        height: 12.5em;
+    }
+
+    .imgUniao p {
+        font-size: 1rem;
+        text-align: left;
+        width: 10em;
+    }
+
+    .etapa1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .imgEtapa img {
+        height: 22em;
+    }
+
+    .minganaquistao h1 {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        gap: 3vh;
+        flex-direction: column;
+    }
+
+    .minganaBtn,
+    .federalistaBtn {
+        font-size: 4vw;
+        padding: 3vw 5vw;
+        width: 100%;
+    }
+
+    .btn1,
+    .btn2 {
+        max-width: none;
+    }
+
+    .fraseFooter p {
+        font-size: 3rem;
+    }
+
+    .logoEcho img {
+        height: 1.5vh;
     }
 }
