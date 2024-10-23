@@ -535,9 +535,9 @@ header {
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
+    width: 36em;
     font-size: 1.3rem;
     margin: 1vw;
-    width: 34em;
 }
 
 .descriptionPoliticos2 ul li::marker {
@@ -1156,7 +1156,6 @@ footer {
 
     .descriptionPoliticos2 ul {
         padding: 0 4rem;
-        width: 18em;
     }
 
     .circleYellow span {
@@ -1188,6 +1187,7 @@ footer {
 
     .etapa1 h1 {
         font-size: 2.5rem;
+        margin-top: 4vh;
     }
 
     .imgEtapa img {
@@ -1268,7 +1268,6 @@ footer {
 
     .descriptionPoliticos2 ul {
         padding: 0 4rem;
-        width: 18em;
         font-size: 20px;
     }
 
@@ -1285,5 +1284,22 @@ footer {
 
     .fraseFooter p {
         font-size: 2rem;
+    }
+}
+
+/* Responsividade das telas 768px */
+
+@media screen and (max-width: 768px) {
+    .federalistaTop h1 {
+        left: 50vw;
+        font-size: 12vw;
+    }
+
+    .tributario h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .partido h1 {
+        width: 76vw;
     }
 }
