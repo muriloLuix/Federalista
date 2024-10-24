@@ -373,7 +373,7 @@ header {
     justify-content: center;
     text-align: center;
     border-radius: 15px;
-    padding: 1.5vw;
+    padding: .5vw;
     font-family: var(--montserrat);
     position: absolute;
     right: 14.9vw;
@@ -1269,6 +1269,7 @@ footer {
     .descriptionPoliticos2 ul {
         padding: 0 4rem;
         font-size: 20px;
+        width: 19em;
     }
 
     .judiciarioFederalismo p {
