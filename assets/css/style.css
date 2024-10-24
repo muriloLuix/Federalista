@@ -544,7 +544,7 @@ header {
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
-    width: 36em;
+    width: 36vw;
     font-size: 1.3rem;
     margin: 1vw;
 }
@@ -1288,7 +1288,7 @@ footer {
     .descriptionPoliticos2 ul {
         padding: 0 4rem;
         font-size: 20px;
-        width: 19em;
+        width: 19vw;
     }
 
     .judiciarioFederalismo p {
