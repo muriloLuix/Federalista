@@ -539,6 +539,10 @@ header {
     font-weight: 700;
 }
 
+.descriptionPoliticos2 nav{
+    max-width: 100vw;
+}
+
 .segundaImagemPoliticos {
     margin-top: 3vh;
 }
@@ -548,7 +552,7 @@ header {
     background: radial-gradient(circle, #00348F, #000000);
     -webkit-background-clip: text;
     color: transparent;
-    width: 36vw;
+    max-width: 40vw;
     font-size: 1.3rem;
     margin: 1vw;
 }
