@@ -114,6 +114,7 @@ main {
     --cor-federalista-top: #1651B8;
     --branco: #F5F5F7;
     --vermelho: #FF0000;
+    --amarelo: #FFBF00;
 }
 
 main {
@@ -952,65 +953,17 @@ header {
 /* Footer Style */
 
 footer {
-    background-color: #fff;
+    background-color: var(--amarelo);
     width: 100%;
     height: 60vh;
     max-width: 100vw;
 }
 
-.fraseFooter {
-    padding-top: 8vh;
-}
-
-.fraseFooter p {
-    font-size: 40px;
-    color: #1651B8;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Playfair", serif;
-    font-style: italic;
-}
-
-.fraseFooter span {
+.logoFooter{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    color: #1651B8;
-    text-align: center;
-    font-family: "Playfair", serif;
-    font-style: italic;
-}
-
-.imgFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imgFooter img {
-    margin-top: 2vh;
-    width: 20vw;
-    height: 39vh;
-}
-
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
-    padding-bottom: 1vh;
-}
-
-.logoEcho img {
-    display: flex;
-    width: 1.5vw;
-    height: 1.5vh;
-}
-
-.textEcho span {
-    font-family: var(--taruno);
-    font-size: 10px;
+    padding-top: 5vh;
 }
 
 /* Responsividade em Telas 1440px */
