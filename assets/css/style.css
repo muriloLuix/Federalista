@@ -391,6 +391,10 @@ header {
     font-weight: bold;
 }
 
+.circleBlue .plus{
+    font-size: 3rem;
+}
+
 
 /* Circle Blue */
 
@@ -511,10 +515,6 @@ header {
     font-size: 1.5rem;
 }
 
-.generalState ul li::marker {
-    color: #000;
-}
-
 .estadoFederadoItens {
     display: flex;
 }
@@ -532,6 +532,10 @@ header {
 
 .tamanhoMaquina span {
     color: var(--cor-federalista-top);
+}
+
+.tamanhoMaquina strong{
+    font-size: 4rem;
 }
 
 .divImagemState {
@@ -821,7 +825,7 @@ header {
     color: rgb(255, 255, 255);
     font-family: var(--montserrat);
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .imgEtapa {
@@ -874,6 +878,8 @@ header {
 .esferaVerde p {
     margin: 0;
     padding: 0;
+    width: 12em;
+    font-size: 1rem;
 }
 
 
