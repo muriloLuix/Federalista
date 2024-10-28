@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/faviconContrucao/favicon-32x32.png" type="image/x-icon">
+    <!-- Favicon -->
     <!-- Css -->
     <link rel="stylesheet" href="../css/construction.css">
     <!-- Css -->
@@ -42,21 +45,27 @@
         <div class="title mod">
             Página em Construção!
         </div>
-        <div class="informacoes">
-            <input type="email" name="email" id="email" placeholder=" ">
-            <label for="email">Email</label>
+        <div class="title">
+            Insira seu e-mail para receber um aviso de quando a página estiver pronta!
         </div>
-
-
-
-
-        <!-- <div class="title">
-            Acesse o Instagram ♥
-            <div class="sub">
-                <a href="https://instagram.com/css_informatica" target=”_blank”>instagram: css_informatica</a>
-            </div>
-        </div> -->
+        <div class="informacoes">
+            <form action="https://formsubmit.co/muriloluiz654@gmail.com" method="POST">
+                <div class="input-container">
+                    <input type="text" name="name" placeholder=" " required>
+                    <label for="name">Nome</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <input type="hidden" name="_next" value="obrigado.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>

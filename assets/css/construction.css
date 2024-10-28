@@ -105,19 +105,19 @@ body {
     position: absolute;
     width: 2.4rem;
     top: 17.2rem;
-    background: #e67da4;
+    background: #1651B8;
     left: 16.8rem;
     height: 3rem;
     border-radius: 0.3rem 0.3rem 0 0;
     z-index: 55;
-    box-shadow: -2px 0px #f36b9d;
+    box-shadow: -2px 0px #1651B8;
 }
 
 .objects_cup:after {
     content: '';
     width: 2rem;
     height: 2rem;
-    background: #e67da4;
+    background: #1651B8;
     position: absolute;
     top: 0.7rem;
     left: 0.4rem;
@@ -131,7 +131,7 @@ body {
     position: absolute;
     width: 1rem;
     height: 1.3rem;
-    border: 4px solid #f36b9d;
+    border: 4px solid #1651B8;
     left: 1.6rem;
     top: 0.8rem;
     border-radius: 1rem;
@@ -163,7 +163,7 @@ body {
 }
 
 .box_1 div {
-    background: #e67da4;
+    background: #1651B8;
     position: absolute;
     border-radius: 1rem;
 }
@@ -201,7 +201,7 @@ body {
     height: 0.3rem;
     top: 2.7rem;
     left: 2.7rem;
-    box-shadow: 1rem 0px #e67da4, 1.8rem 0px #e67da4, -0.5rem 11px #e67da4;
+    box-shadow: 1rem 0px #1651B8, 1.8rem 0px #1651B8, -0.5rem 11px #1651B8;
 }
 
 .box_1 :nth-child(6) {
@@ -209,7 +209,7 @@ body {
     height: 0.3rem;
     top: 4.1rem;
     left: 1.2rem;
-    box-shadow: 1rem 22px #e67da4, 0rem 43px #e67da4;
+    box-shadow: 1rem 22px #1651B8, 0rem 43px #1651B8;
 }
 
 .box_1 :nth-child(7) {
@@ -217,7 +217,7 @@ body {
     height: 0.3rem;
     top: 4.8rem;
     left: 1.7rem;
-    box-shadow: 0rem 22px #e67da4;
+    box-shadow: 0rem 22px #1651B8;
 }
 
 .box_2 {
@@ -235,7 +235,7 @@ body {
 .box_2 div {
     position: absolute;
     border-radius: 1rem;
-    background: #e67da4;
+    background: #1651B8;
 }
 
 .box_2 :nth-child(1) {
@@ -244,7 +244,7 @@ body {
     height: 0.6rem;
     left: 0.8rem;
     top: -0.4rem;
-    box-shadow: 1.1rem 0.5rem #e67da4, 2.5rem -0.5rem #e67da4, 6rem 0.5rem #e67da4;
+    box-shadow: 1.1rem 0.5rem #1651B8, 2.5rem -0.5rem #1651B8, 6rem 0.5rem #1651B8;
 }
 
 .box_2 :nth-child(2) {
@@ -253,14 +253,14 @@ body {
     height: 0.6rem;
     left: 0.8rem;
     top: 0rem;
-    box-shadow: 0.5rem -1.1rem #e67da4, -0.9rem -2rem #e67da4, 0.2rem -5.5rem #e67da4;
+    box-shadow: 0.5rem -1.1rem #1651B8, -0.9rem -2rem #1651B8, 0.2rem -5.5rem #1651B8;
 }
 
 .box_2:after {
     content: '';
     width: 1rem;
     height: 0.2rem;
-    background: #e67da4;
+    background: #1651B8;
     position: absolute;
     border-radius: 6rem;
     top: 2.4rem;
@@ -271,13 +271,13 @@ body {
     content: '';
     width: 0.8rem;
     height: 0.2rem;
-    background: #e67da4;
+    background: #1651B8;
     position: absolute;
     border-radius: 6rem;
     top: 1.1rem;
     left: 2rem;
     transform: rotate(-68deg);
-    box-shadow: -2.2rem 2.8rem #e67da4;
+    box-shadow: -2.2rem 2.8rem #1651B8;
 }
 
 .box_3 {
@@ -295,14 +295,14 @@ body {
 .box_3:after {
     content: '';
     position: absolute;
-    background: #e67da4;
+    background: #1651B8;
     width: 0.8rem;
     height: 0.2rem;
     transform: rotate(-64deg);
     border-radius: 5rem;
     top: 0.8rem;
     left: 0.5rem;
-    box-shadow: 0.2rem 0.5rem #e67da4;
+    box-shadow: 0.2rem 0.5rem #1651B8;
 }
 
 .smoke {
@@ -395,6 +395,12 @@ body {
     font-size: 20px;
 }
 
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .informacoes input {
     width: 100%;
     padding: 12px 10px;
@@ -403,8 +409,8 @@ body {
     border-radius: 4px;
     outline: none;
     background-color: transparent;
+    color: #fff;
 }
-
 
 .informacoes label {
     position: absolute;
@@ -421,10 +427,31 @@ body {
 
 .informacoes input:focus+label,
 .informacoes input:not(:placeholder-shown)+label {
-    top: -1px;
+    top: -2px;
     left: 8px;
     font-size: 12px;
     color: #fff;
-    padding: 0 5px;
-    background-color: white;
+    background-color: #222222;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form button {
+    background-color: #1651B8;
+    outline: none;
+    border: none;
+    width: 40%;
+    margin-top: 3vh;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+form button:hover {
+    background-color: #6b90cf;
 }
