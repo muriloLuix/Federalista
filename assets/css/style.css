@@ -640,7 +640,7 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
     padding: 0 13rem 0 0;
 }
 
@@ -764,7 +764,7 @@ header {
     font-size: 1.5rem;
     width: 42%;
     font-family: var(--montserrat);
-    text-align: justify;
+    text-align: center;
 }
 
 .image-right {
@@ -808,7 +808,7 @@ header {
     font-size: 1.5rem;
     font-family: var(--montserrat);
     margin-top: 7vh;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Uniao Style */
@@ -827,7 +827,7 @@ header {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-family: var(--montserrat);
-    text-align: justify;
+    text-align: center;
 }
 
 .imgUniao {
