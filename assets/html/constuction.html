@@ -49,7 +49,7 @@
             Insira seu e-mail para receber um aviso de quando a página estiver pronta!
         </div>
         <div class="informacoes">
-            <form action="https://formsubmit.co/muriloluiz654@gmail.com" method="POST">
+            <form action="../php/send_email.php" method="POST">
                 <div class="input-container">
                     <input type="text" name="name" placeholder=" " required>
                     <label for="name">Nome</label>
@@ -58,14 +58,11 @@
                     <input type="email" name="email" id="email" placeholder=" " required>
                     <label for="email">Email</label>
                 </div>
-                <input type="hidden" name="_next" value="obrigado.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="box">
                 <button type="submit">Enviar</button>
             </form>
+
         </div>
     </div>
-
 </body>
 
 </html>

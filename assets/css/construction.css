@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .footer {
     bottom: 0;
@@ -410,6 +411,7 @@ body {
     outline: none;
     background-color: transparent;
     color: #fff;
+    font-family: "Montserrat", serif;
 }
 
 .informacoes label {
@@ -450,6 +452,8 @@ form button {
     transition: all .3s ease;
     cursor: pointer;
     color: #fff;
+    font-family: "Montserrat", serif;
+    border-radius: 10px;
 }
 
 form button:hover {
