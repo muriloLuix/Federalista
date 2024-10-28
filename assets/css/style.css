@@ -521,7 +521,7 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-family: var(--regular);
-    text-align: right;
+    text-align: center;
     margin-top: 1.4em;
     text-transform: uppercase;
     font-weight: 300;
@@ -569,7 +569,7 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-family: var(--regular);
-    margin-top: 40vh !important;
+    margin-top: 9vh !important;
     width: 58vw;
     margin: 0 9.8vw;
     font-weight: 300;
@@ -728,6 +728,24 @@ header {
 
 .judiciarioFederalismo {
     max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15vw;
+}
+
+.content-wrapper img {
+    width: 28vw;
+    height: 35vh;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    object-fit: cover;
+    margin-left: 5vw;
 }
 
 .judiciarioFederalismo h1 {
@@ -735,8 +753,8 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-family: var(--montserrat);
-    margin-left: 15vw;
     font-weight: 700;
+    margin-left: 15vw;
 }
 
 .judiciarioFederalismo p {
@@ -744,10 +762,14 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-size: 1.5rem;
-    margin-left: 15vw;
-    width: 69vw;
+    width: 42%;
     font-family: var(--montserrat);
     text-align: justify;
+}
+
+.image-right {
+    width: 30%;
+    margin-left: 2rem;
 }
 
 /* Judiciario Federalismo */
@@ -1054,6 +1076,7 @@ footer {
 /* Responsividade em Telas de 1180px */
 
 @media screen and (max-width: 1180px) {
+
     .refundarBrasil h1 {
         font-size: 3.5rem;
         padding: 1rem 6rem;
@@ -1116,8 +1139,8 @@ footer {
     .terceiraImagemPoliticos img {
         width: 72vw;
     }
-    
-    .terceiraImagemPoliticos{
+
+    .terceiraImagemPoliticos {
         margin-top: 6vh;
     }
 
@@ -1206,6 +1229,44 @@ footer {
 /* Responsividade em telas 932px */
 
 @media screen and (max-width: 932px) {
+    .terceiraImagemPoliticos {
+        display: none;
+    }
+
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .content-wrapper img {
+        width: 78vw;
+        height: 35vh;
+    }
+
+    .judiciarioFederalismo p {
+        background: radial-gradient(circle, #00348F, #000000);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 1.5rem;
+        width: 77%;
+        font-family: var(--montserrat);
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+
+    .judiciarioFederalismo h1 {
+        text-align: center !important;
+        margin: 0px auto !important;
+        padding: 0px !important;
+    }
+
+    .image-right {
+        margin: 0px;
+    }
+
     header {
         height: auto;
         padding: 1em;
@@ -1457,10 +1518,12 @@ footer {
 
     .tributario p {
         font-size: 20px;
+        text-align: center;
     }
 
     .refundarBrasil p {
         font-size: 20px;
+        text-align: center;
     }
 
     .generalState ul li {
