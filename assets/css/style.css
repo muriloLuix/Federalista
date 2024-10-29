@@ -1044,10 +1044,11 @@ header {
 /* Footer Style */
 
 footer {
-    background-color: var(--amarelo);
+    background-image: url(../img/footer/BackgroundFooter.svg);
     width: 100%;
     height: auto;
     max-width: 100vw;
+
 }
 
 .logoFooter {
@@ -1576,7 +1577,8 @@ footer {
     }
 
     .generalState ul li {
-        font-size: 20px;
+        line-height: 3vh;
+        font-size: 1.3rem;
     }
 
     .estadoFederado h1 {
