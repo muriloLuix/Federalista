@@ -388,6 +388,7 @@ body {
     }
 }
 
+
 .informacoes {
     position: relative;
     margin-top: 20px;
@@ -402,8 +403,9 @@ body {
     margin-bottom: 20px;
 }
 
-.informacoes input {
-    width: 100%;
+.informacoes input,
+.informacoes select {
+    width: 44vw;
     padding: 12px 10px;
     font-size: 16px;
     border: 1px solid #fff;
@@ -412,6 +414,11 @@ body {
     background-color: transparent;
     color: #fff;
     font-family: "Montserrat", serif;
+}
+
+.informacoes select:focus {
+    background-color: #444;
+    color: #fff;
 }
 
 .informacoes label {
@@ -428,12 +435,23 @@ body {
 }
 
 .informacoes input:focus+label,
-.informacoes input:not(:placeholder-shown)+label {
+.informacoes input:not(:placeholder-shown)+label,
+.informacoes select:focus+label,
+.informacoes select:not([value=""])+label {
     top: -2px;
     left: 8px;
     font-size: 12px;
     color: #fff;
     background-color: #222222;
+}
+
+.informacoes select {
+    appearance: none;
+    background-image: url(data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="white" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 4.5h13a.5.5 0 0 1 .4.8l-6.5 6.5a.5.5 0 0 1-.8 0l-6.5-6.5A.5.5 0 0 1 1.5 4.5z"/></svg>);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    width: 45.3vw;
 }
 
 form {
@@ -456,6 +474,80 @@ form button {
     border-radius: 10px;
 }
 
-form button:hover {
+form button:hover,
+form a:hover {
     background-color: #6b90cf;
+}
+
+form a,
+form button {
+    background-color: #1651B8;
+    outline: none;
+    border: none;
+    width: 40%;
+    margin-top: 3vh;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 1.5%;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 43vw;
+}
+
+.informacoes .select-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #fff;
+    background-color: transparent;
+    padding: 0 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.informacoes select:focus+.select-label,
+.informacoes select:not([value=""])+.select-label {
+    top: -2px;
+    left: 8px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #222222;
+}
+
+@media screen and (max-width: 1180px) {
+    .informacoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacoes input {
+        width: 65vw;
+    }
+
+    .informacoes select {
+        width: 70vw;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    form a,
+    form button {
+        width: 62vw;
+        font-size: 1.3rem;
+    }
 }

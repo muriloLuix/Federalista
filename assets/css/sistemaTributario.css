@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+/* Fonts */
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-lt-w1g');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+
+/* Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* General Styles */
+
+
+.fade-left,
+.fade-right,
+.fade-up,
+.fade-down {
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    will-change: transform;
+}
+
+.fade-left {
+    transform: translateX(-20px);
+}
+
+.fade-right {
+    transform: translateX(20px);
+}
+
+.fade-up {
+    transform: translateY(20px);
+}
+
+.fade-down {
+    transform: translateY(-20px);
+}
+
+.show.fade-left,
+.show.fade-right,
+.show.fade-up,
+.show.fade-down {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0000002f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-header);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:focus {
+    border-radius: 20px;
+}
+
+
+@font-face {
+    font-family: "Taruno";
+    src: url(../font/taruno/Fontspring-DEMO-tarunowide-medium.otf);
+}
+
+:root {
+    --cor-header: #041229;
+    --montserrat: "Montserrat", sans-serif;
+    --garamond: "EB Garamond", serif;
+    --regular: 'Impact Regular';
+    --taruno: 'Taruno', sans-serif;
+    --meow: "Meow Script", cursive;
+    --federalista-top: #000E24;
+    --cor-federalista-top: #1651B8;
+    --branco: #F9F9FB;
+    --vermelho: #FF0000;
+    --amarelo: #FFBF00;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    position: relative;
+    font-size: 6rem;
+    color: #fff;
+    font-family: var(--regular);
+    padding: 0 18.7rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+
+}
+
+/* TitleTop Style */
+
+.titleTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleTop h1 {
+    position: relative;
+    font-family: var(--regular);
+    font-size: 16rem;
+    font-weight: 500;
+    margin-top: 2vh;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+/* TitleTop Style */
+
+/* Texts Style */
+
+.texts p {
+    font-family: var(--montserrat);
+    font-size: 20px;
+    padding: 0 18.7rem;
+    color: var(--branco);
+    margin-top: 3vh;
+    line-height: 3vh;
+}
+
+/* Texts Style */
+
+/* Copyright */
+
+.copyrightText {
+    padding: 0 18.7rem;
+    margin-top: 4vh;
+}
+
+.copyrightText span {
+    color: var(--branco);
+    font-family: var(--montserrat);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* Copyright */
+
+/* General Styles */
+
+/* Header Style */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-header);
+    width: 100%;
+    max-width: 100vw;
+    height: 12vh;
+    font-family: var(--montserrat);
+    color: #fff;
+    overflow: hidden;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2em;
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+
+.imgFederalista {
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.headerItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.headerItens ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.headerItens ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.headerItens ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.headerItens ul li a:hover {
+    color: #ffffffb9;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    gap: 4em;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 1em;
+    white-space: nowrap;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    color: #fff;
+    transition: all .3s ease;
+    flex-shrink: 1;
+}
+
+.navigation ul li:hover {
+    list-style-type: none;
+    color: #ffffffb9;
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 0 1em;
+    }
+
+    .headerItens ul {
+        gap: 0.5rem;
+    }
+
+    .navigation ul {
+        gap: 0.5em;
+        justify-content: space-evenly;
+    }
+
+    .navigation ul li {
+        font-size: 0.9rem;
+    }
+
+    .headerItens {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .headerItens ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1267px) {
+    .navigation {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    /* Header Style */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        justify-content: space-between;
+    }
+
+    .hamburger div {
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 101;
+
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 10px;
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -10px;
+    }
+
+    .navigation.open .headerItens {
+        display: flex;
+    }
+
+    /* Header Style */
+
+    /* titletop style */
+
+    .titleTop h1 {
+        font-size: 4.5rem;
+    }
+
+    /* titletop style */
+
+    /* Title h1 style */
+
+    .title h1 {
+        font-size: 3rem;
+        padding: 0 2.7rem;
+        margin-top: 4vh;
+    }
+
+    /* Title h1 style */
+
+    /* Texts p style */
+
+    .texts p {
+        padding: 0 2.7rem;
+    }
+
+    /* Texts p style */
+
+    /* Federalista 3D Style */
+
+    .federalista3D img {
+        width: 26vw;
+        height: 18vh !important;
+    }
+
+    /* Federalista 3D Style*/
+
+}
+
+.headerItens.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-header);
+    padding: 2em 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* Header Style */
+
+/* Blue Section Style */
+
+.blueSection {
+    position: relative;
+    /* Torna este elemento o contêiner pai para a posição absoluta */
+    background-color: #1651B8;
+    min-height: 100vh;
+    width: 100vw;
+    padding-bottom: 9vh;
+    padding-bottom: 100px;
+    /* Espaço adicional para garantir que o texto não sobreponha a logo */
+}
+
+/* Blue Section Style */
+
+/* Federalista 3D */
+
+.federalista3D {
+    position: absolute;
+    bottom: -.5vh;
+    left: 87vw;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.federalista3D img {
+    width: 26vw;
+    height: 76vh;
+}
+
+/* Federalista 3D */
+
+/* Footer Style */
+
+footer {
+    background-color: var(--branco);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    color: var(--cor-federalista-top);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.telaInicial span {
+    font-family: var(--montserrat);
+}
+
+/* Footer Style */

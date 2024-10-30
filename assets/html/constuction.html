@@ -49,7 +49,7 @@
             Insira seu e-mail para receber um aviso de quando a página estiver pronta!
         </div>
         <div class="informacoes">
-            <form action="../php/send_email.php" method="POST">
+            <form action="https://formspree.io/f/mbljdnbj" method="POST" class="informacoes">
                 <div class="input-container">
                     <input type="text" name="name" placeholder=" " required>
                     <label for="name">Nome</label>
@@ -58,9 +58,22 @@
                     <input type="email" name="email" id="email" placeholder=" " required>
                     <label for="email">Email</label>
                 </div>
-                <button type="submit">Enviar</button>
+                <div class="input-container">
+                    <select name="page" id="page" required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="pagProgramas">Página de Programas</option>
+                        <option value="pagEstatuto">Página do Estatuto</option>
+                        <option value="pagManifesto">Página do Manifesto</option>
+                        <option value="pagCredo">Página do Credo</option>
+                        <option value="matDivulgacao">Página do Material de Divulgação</option>
+                    </select>
+                    <label for="page" class="select-label">Qual página deseja receber a informação?</label>
+                </div>
+                <div class="btns">
+                    <button type="submit">Enviar</button>
+                    <a href="../../index.html">Página Inicial</a>
+                </div>
             </form>
-
         </div>
     </div>
 </body>
