@@ -155,7 +155,7 @@ body {
 .texts ul li {
     font-family: var(--montserrat);
     font-size: 20px;
-    padding: 0px 20.7rem;
+    padding: 0px 21.7rem;
     color: var(--branco);
     margin-top: 3vh;
     line-height: 3vh;
@@ -182,13 +182,13 @@ body {
 
 /* Logo Federalista Style */
 
-.imgLogoFederalista{
+.imgLogoFederalista {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgLogoFederalista img{
+.imgLogoFederalista img {
     width: 5em;
     height: 5em;
 }
@@ -378,7 +378,7 @@ header {
     /* titletop style */
 
     .titleTop h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     /* titletop style */
