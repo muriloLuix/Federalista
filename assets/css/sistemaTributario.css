@@ -146,7 +146,7 @@ body {
 .texts p {
     font-family: var(--montserrat);
     font-size: 20px;
-    padding: 0 18.7rem;
+    padding: 0px 20.7rem;
     color: var(--branco);
     margin-top: 3vh;
     line-height: 3vh;
@@ -155,7 +155,7 @@ body {
 .texts ul li {
     font-family: var(--montserrat);
     font-size: 20px;
-    padding: 0 19.7rem;
+    padding: 0px 20.7rem;
     color: var(--branco);
     margin-top: 3vh;
     line-height: 3vh;
@@ -167,7 +167,6 @@ body {
 /* Copyright */
 
 .copyrightText {
-    padding: 0 18.7rem;
     margin-top: 4vh;
 }
 
@@ -176,9 +175,25 @@ body {
     font-family: var(--montserrat);
     font-style: italic;
     font-weight: lighter;
+    padding: 0px 20.7rem;
 }
 
 /* Copyright */
+
+/* Logo Federalista Style */
+
+.imgLogoFederalista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgLogoFederalista img{
+    width: 5em;
+    height: 5em;
+}
+
+/* Logo Federalista Style */
 
 /* General Styles */
 
