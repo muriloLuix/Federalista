@@ -152,6 +152,16 @@ body {
     line-height: 3vh;
 }
 
+.texts ul li {
+    font-family: var(--montserrat);
+    font-size: 20px;
+    padding: 0 19.7rem;
+    color: var(--branco);
+    margin-top: 3vh;
+    line-height: 3vh;
+}
+
+
 /* Texts Style */
 
 /* Copyright */
@@ -385,6 +395,25 @@ header {
 
     /* Federalista 3D Style*/
 
+    /* Footer Style */
+
+    .copyrightText {
+        padding: 0 2.7rem;
+        margin-top: 4vh;
+    }
+
+    /* Footer Style */
+
+    /* Credo Style */
+
+    .texts ul li {
+        font-family: var(--montserrat);
+        font-size: 20px;
+        padding: 0 3.7rem;
+        color: var(--branco);
+        margin-top: 3vh;
+        line-height: 3vh;
+    }
 }
 
 .headerItens.active {
