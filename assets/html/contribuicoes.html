@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/sistemaTributario.css">
+    <!-- Css -->
+    <!-- Script -->
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/formated.js" defer></script>
+    <!-- Script -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/header/logoFederalistaTopo.svg" type="image/x-icon">
+    <!-- Favicon -->
+    <title>Ação Federalista - Contribuições</title>
+    <style>
+        .title h1 {
+            position: relative;
+            font-size: 5.7rem;
+            color: #fff;
+            font-family: var(--regular);
+            padding: 0 18.7rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="imgFederalista">
+                <img src="../img/header/logoFederalistaTopo.svg" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="headerItens">
+                <ul>
+                    <a href="../../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="quemsomos.html">
+                        <li>Quem somos</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Programa</li>
+                    </a>
+                    <a href="estatuto.html">
+                        <li>Estatuto</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Manifesto</li>
+                    </a>
+                    <a href="credo.html">
+                        <li>Credo</li>
+                    </a>
+                    <a href="poemadamarca.html">
+                        <li>Poema da Marca</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Material da divulgação</li>
+                    </a>
+                    <a href="">
+                        <li>Loja</li>
+                    </a>
+                    <a href="">
+                        <li>Contato</li>
+                    </a>
+                    <a href="contribuicoes.html">
+                        <li>Associa-se/Contribua</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blueSection">
+            <div class="generalDiv">
+                <div class="titleTop">
+                    <h1 data-text="AÇÃO FEDERALISTA">AÇÃO FEDERALISTA</h1>
+                </div>
+                <div class="bloco1">
+                    <div class="title">
+                        <h1>PRÉ ASSOCIAÇÃO E CONTRIBUIÇÕES</h1>
+                    </div>
+                    <div class="texts">
+                        <p>Ação para Refundar o Brasil começa com as suas ações. São aquelas que estão descritas na
+                            Etapa 1, tais como, pré associar-se e contribuir, ou apenas contribuir, se for do seu
+                            desejo. Mas tem outra ação que precisa ser feita também: divulgar, divulgar, divulgar este
+                            site e as ideias federalistas, para que nós o Povo, organizemos as forças que temos e
+                            possamos exercer nossa soberania popular, para Refundar a Nação!
+                        </p>
+                        <p class="quebraDeTexto">VEM DE NÓS, O PODER DO POVO
+                            É POR NÓS, O POVO
+                            É PARA NÓS MESMOS, O POVO</p>
+                        <p><strong>Formulário de pré-associação</strong></p>
+                        <p>Tenho interesse em associar-me ao Federalista quando este estiver juridicamente formado. A
+                            contribuição será no valor anotado, mas não obrigatória, enquanto o Federalista não estiver
+                            formado como pessoa jurídica. A contribuição será recebida e gerida pelo Instituto
+                            Federalista.</p>
+                        <form>
+                            <div class="group">
+                                <input type="text" name="nome"><span class="highlight"></span><span class="bar"></span>
+                                <label>Nome Completo</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" id="rg" name="rg" oninput="formatRG()" maxlength="12"><span
+                                    class="highlight"></span><span class="bar"></span>
+                                <label>RG</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="uf"><span class="highlight"></span><span class="bar"></span>
+                                <label>UF</label>
+                            </div>
+                            <div class="group">
+                                <input type="tel" id="celular" name="celular" oninput="formatCelular()"
+                                    maxlength="15"><span class="highlight"></span><span class="bar"></span>
+                                <label>Celular</label>
+                            </div>
+                            <div class="group">
+                                <input type="email" name="email"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" id="contribuicao" name="contribuicao"
+                                    oninput="formatContribuicao()"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Minha contribuição</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="observacoes"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Observações</label>
+                            </div>
+
+                            <button type="submit" class="button buttonBlue">Enviar
+                                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                            </button>
+                        </form>
+                        <div class="copyrightText">
+                            <p>As informações serão mantidas em sigilo pelo gestor, em respeito à LGPD – Lei Geral de
+                                Proteção aos Dados. </p>
+                        </div>
+                        <p><strong>VOCÊ PODE APENAS CONTRIBUIR</strong></p>
+                        <p>Sim, é opção sua contribuir sem fazer sua pré-associação, que pode ser feita quando sentir
+                            que deve fazê-la. Faça a sua contribuição com PIX para <span
+                                class="email">contato@if.org.br</span></p>
+                        <div class="copyrightText">
+                            <span><strong>Nota:</strong>
+                                Os recursos serão geridos pelo Instituto Federalista, entidade sem fins de lucro,
+                                fundada em
+                                2005. Voltada para pesquisas de viés acadêmico sobre federalismo e temas afins. O
+                                Instituto
+                                Federalista (IF) é apartidário e exercerá apenas o papel de gestor financeiro e
+                                documental
+                                até a formação da pessoa jurídica do Ação Federalista, quando este terá sua própria
+                                conta
+                                bancária e administração. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="federalista3D">
+                <img src="../img/footer/logoFederalista3D.svg" alt="Logo 3D federalista">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="home">
+            <a href="../../index.html" class="link">
+                <div class="svg">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13L1 7L7 1" stroke="#1651B8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="telaInicial">
+                    <span>Voltar a página inicial</span>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

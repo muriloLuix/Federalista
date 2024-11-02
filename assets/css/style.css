@@ -34,24 +34,21 @@ body.no-scroll {
 /* General Style */
 
 .cookie-banner {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: 500px;
+    height: 15vh;
+    width: 100%;
     background-color: #041229;
     /* Fundo azul escuro */
     color: #F5F5F7;
     /* Texto branco */
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     animation: slideInDesktop 0.5s ease-out;
     font-family: 'Montserrat', sans-serif;
+    border-radius: 0;
 }
 
 @keyframes slideInDesktop {
@@ -138,31 +135,11 @@ body.no-scroll {
     background-color: #e5aa00;
 }
 
-.hidden {
-    display: none;
-}
-
 /* Responsividade para celular */
 @media (max-width: 768px) {
     .cookie-banner {
-        bottom: auto;
-        top: 0;
-        right: 0;
-        left: 0;
-        border-radius: 0;
-        animation: slideInMobile 0.5s ease-out;
-    }
-
-    @keyframes slideInMobile {
-        from {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
+        top: auto;
+        bottom: 0;
     }
 
     .cookie-buttons {

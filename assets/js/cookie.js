@@ -19,28 +19,29 @@ function getCookie(name) {
     return "";
 }
 
-// Mostrar o banner se o consentimento ainda não foi dado
+// Função para verificar o consentimento
 function checkCookieConsent() {
     const consent = getCookie("cookieConsent");
-    if (!consent) {
-        document.getElementById("cookie-banner").classList.remove("hidden");
+    if (consent) {
+        document.getElementById("cookie-banner").style.display = "none";
     }
 }
 
-// Funções de consentimento
-document.getElementById("accept-cookies").addEventListener("click", function () {
-    setCookie("cookieConsent", "accepted", 365);
-    document.getElementById("cookie-banner").classList.add("hidden");
-});
+// Executa a verificação após o carregamento do DOM
+document.addEventListener("DOMContentLoaded", function () {
+    checkCookieConsent();
 
-document.getElementById("decline-cookies").addEventListener("click", function () {
-    setCookie("cookieConsent", "declined", 365);
-    document.getElementById("cookie-banner").classList.add("hidden");
-});
+    document.getElementById("accept-cookies").addEventListener("click", function () {
+        setCookie("cookieConsent", "accepted", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    });
 
-// Botão Personalizar - Pode abrir um modal ou mais opções de consentimento (exemplo simples aqui)
-document.getElementById("customize-cookies").addEventListener("click", function () {
-    alert("Opções de personalização de cookies virão aqui.");
-});
+    document.getElementById("decline-cookies").addEventListener("click", function () {
+        setCookie("cookieConsent", "declined", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    });
 
-window.onload = checkCookieConsent;
+    document.getElementById("customize-cookies").addEventListener("click", function () {
+        alert("Opções de personalização de cookies virão aqui.");
+    });
+});
