@@ -219,10 +219,10 @@ body.no-scroll {
 :root {
     --cor-header: #041229;
     --montserrat: "Montserrat", sans-serif;
-    --garamond: "EB Garamond", serif;
-    --regular: 'Impact Regular';
+    --garamond: "EB Garamond", sans-serif;
+    --regular: 'Impact Regular', sans-serif;
     --taruno: 'Taruno', sans-serif;
-    --meow: "Meow Script", cursive;
+    --meow: "Meow Script", cursive, sans-serif;
     --federalista-top: #000E24;
     --cor-federalista-top: #1651B8;
     --branco: #F5F5F7;
@@ -393,14 +393,13 @@ header {
 }
 
 .brasilia img {
-    height: 6vh;
-    width: 56vw;
+    height: 3em;
+    width: 4em;
 }
 
-
 .otherStates img {
-    height: 10vh;
-    width: 55vw;
+    height: 6em;
+    width: 66em;
 }
 
 .slogan {
@@ -1935,7 +1934,7 @@ footer {
     .terceiraImagemPoliticos {
         display: none;
     }
-} 
+}
 
 @media screen and (max-width: 1416px) {
     .navigation ul {
