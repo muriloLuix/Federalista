@@ -364,7 +364,7 @@ header {
     margin: 0;
     font-family: var(--regular);
     color: var(--cor-federalista-top);
-    font-size: 14vw;
+    font-size: 13.5rem;
     letter-spacing: -3px;
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: absolute;
