@@ -202,7 +202,7 @@ input:focus {
 /* Label */
 
 label {
-    color: #999;
+    color: #000;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -395,7 +395,6 @@ input:focus~.highlight {
 /* QuebraDeTexto */
 
 .quebraDeTexto {
-    width: 51em;
     font-weight: bolder;
 }
 
@@ -414,9 +413,10 @@ input:focus~.highlight {
     color: var(--branco);
     font-family: var(--montserrat);
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 400;
     display: block;
     padding: 0;
+    max-width: 61vw;
 }
 
 .copyrightText p {

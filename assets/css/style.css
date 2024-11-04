@@ -1543,8 +1543,12 @@ footer {
         height: 20vh;
     }
 
+    .brasilia {
+        margin-bottom: 1vh;
+    }
+
     .brasilia img {
-        height: 4vh;
+        height: 2.5vh;
     }
 
     .federalistaTop h1 {
