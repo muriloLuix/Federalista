@@ -416,7 +416,7 @@ input:focus~.highlight {
     font-weight: 400;
     display: block;
     padding: 0;
-    max-width: 61vw;
+    max-width: 54vw;
 }
 
 .copyrightText p {

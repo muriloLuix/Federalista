@@ -991,6 +991,7 @@ header {
     font-family: var(--montserrat);
     margin-top: 7vh;
     text-align: left;
+    max-width: 37vw;
 }
 
 .associaseGeral {
@@ -1004,7 +1005,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 100em;
+    width: 20em;
     height: 20em;
     background: #FFE11F;
     border-radius: 50%;
@@ -1764,7 +1765,7 @@ footer {
     }
 
     .circleYellow span {
-        width: 36vw;
+        width: 8em;
     }
 
     .circleYellow2 a {
