@@ -625,8 +625,8 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     line-height: 3vh;
-    font-size: 1.3vw;
-    min-height: 23vh;
+    font-size: 1.4vw;
+    min-height: 25vh;
 }
 
 .estadoFederadoItens {
@@ -999,6 +999,7 @@ header {
     align-items: start;
     justify-content: space-around;
 }
+
 
 .associaseGeral p {
     max-width: 37vw;
