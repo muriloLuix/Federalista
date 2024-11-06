@@ -160,17 +160,17 @@ body {
 
 .texts p {
     font-family: var(--montserrat);
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 0px 20.7rem;
     color: var(--branco);
     margin-top: 3vh;
-    line-height: 3vh;
+    line-height: 4vh;
     max-width: 93vw;
 }
 
 .texts ul li {
     font-family: var(--montserrat);
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 0px 21.7rem;
     color: var(--branco);
     margin-top: 3vh;
