@@ -158,6 +158,7 @@ body {
 
 /* Texts Style */
 
+
 .texts p {
     font-family: var(--montserrat);
     font-size: 1.5rem;
@@ -166,6 +167,7 @@ body {
     margin-top: 3vh;
     line-height: 4vh;
     max-width: 93vw;
+    min-height: 8em;
 }
 
 .texts ul li {
