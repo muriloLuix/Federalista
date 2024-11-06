@@ -362,17 +362,17 @@ header {
 
 .federalistaTop h1 {
     margin: 0;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     color: var(--cor-federalista-top);
-    font-size: 13.5rem;
+    font-size: 11.5rem;
     letter-spacing: -3px;
     text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, inset 2px 2px 5px rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    font-weight: 300;
+    font-weight: 700;
     white-space: nowrap;
 }
 
@@ -423,8 +423,8 @@ header {
 }
 
 .refundarBrasil h1 {
-    font-family: var(--regular);
-    font-size: 5rem;
+    font-family: var(--montserrat);
+    font-size: 3.5rem;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
@@ -432,7 +432,7 @@ header {
     letter-spacing: 6.5px;
     margin-top: 0px;
     padding-top: 8vh;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .refundarBrasil p {
@@ -543,14 +543,14 @@ header {
 }
 
 .tributario h1 {
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     font-size: 5rem !important;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 14px;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .tributario p {
@@ -601,14 +601,14 @@ header {
 
 .estadoFederado h1 {
     margin-top: 5em;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     font-size: 53.3px !important;
     text-align: center;
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 3px;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .generalState {
@@ -638,11 +638,11 @@ header {
     background: radial-gradient(circle, #D31313, #6D0A0A);
     -webkit-background-clip: text;
     color: transparent;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     text-align: center;
     margin-top: 1.4em;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .tamanhoMaquina span {
@@ -726,11 +726,11 @@ header {
     background: linear-gradient(to right, #041229, #0E3F8F);
     -webkit-background-clip: text;
     color: transparent;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     margin-top: 9vh !important;
     width: 58vw;
     margin: 0 9.8vw;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .esferaVerde2 {
@@ -978,11 +978,11 @@ header {
     color: white;
     font-size: 4rem;
     text-align: left;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     letter-spacing: 5px;
     width: 69vw;
     margin: 0 auto;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .partido p {
@@ -991,13 +991,16 @@ header {
     font-family: var(--montserrat);
     margin-top: 7vh;
     text-align: left;
-    max-width: 37vw;
 }
 
 .associaseGeral {
     display: flex;
     align-items: start;
     justify-content: space-around;
+}
+
+.associaseGeral p {
+    max-width: 37vw;
 }
 
 .circleYellow2 {
@@ -1073,7 +1076,7 @@ header {
 
 .imgUniao p {
     color: #fff;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     font-weight: 500;
     font-size: 1.4rem;
     width: 20em;
@@ -1104,8 +1107,8 @@ header {
 .etapa1 h1 {
     color: #fff;
     font-size: 119px;
-    font-family: var(--regular);
-    font-weight: 500;
+    font-family: var(--montserrat);
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -1192,9 +1195,9 @@ header {
 .minganaquistao h1 {
     font-size: 2.5vw;
     color: #fff;
-    font-family: var(--regular);
+    font-family: var(--montserrat);
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 0 auto;
     padding: 1vh 0;
@@ -1293,7 +1296,7 @@ footer {
     background-color: #0e7728;
     color: #fff;
     width: 100vw;
-    height: 40vh;
+    min-height: 40vh;
     padding: 40px 20px;
     box-sizing: border-box;
     font-family: var(--montserrat);
@@ -1364,6 +1367,14 @@ footer {
 /* Responsividade em Telas de 1180px */
 
 @media screen and (max-width: 1180px) {
+    .copyright {
+        flex-direction: column;
+    }
+
+    .associaseGeral p {
+        max-width: none;
+    }
+
     .pessoasFelizes img {
         width: 94%;
         height: 43vh;
@@ -1402,7 +1413,7 @@ footer {
     }
 
     .mapOfSite {
-        height: 58vh;
+        min-height: 58vh;
     }
 
     .senhores img {
@@ -1877,7 +1888,7 @@ footer {
     }
 
     .estadoFederado h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
     }
 
     .partidosPoliticos h1 {
@@ -1923,7 +1934,7 @@ footer {
 @media screen and (max-width: 768px) {
     .federalistaTop h1 {
         left: 50vw;
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     .tributario h1 {
