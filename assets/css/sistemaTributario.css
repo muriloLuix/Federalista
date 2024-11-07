@@ -129,7 +129,7 @@ body {
 }
 
 .arvoreMeio p {
-    padding-right: 14rem !important;
+    padding-right: 14rem;
 }
 
 /* Arvore Meio */
@@ -610,11 +610,6 @@ header {
     .arvoreMeio {
         flex-direction: column;
         max-width: 93vw;
-        padding: 0 2.7rem;
-    }
-
-    .arvoreMeio p {
-        padding: 0px !important;
     }
 
     .quebraDeTexto {
