@@ -165,9 +165,8 @@ body {
     padding: 0px 20.7rem;
     color: var(--branco);
     margin-top: 3vh;
-    line-height: 4vh;
+    line-height: 6vh;
     max-width: 93vw;
-    min-height: 8em;
 }
 
 .texts ul li {
