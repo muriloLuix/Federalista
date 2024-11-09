@@ -151,6 +151,11 @@ body.no-scroll {
         width: 100%;
     }
 }
+@media (max-width: 1569px) {
+    .federalistaTop h1{
+        font-size: 9rem !important;
+    }
+}
 
 /* Animações base */
 .fade-left,
@@ -350,7 +355,7 @@ header {
 .federalistaTop {
     background-color: var(--federalista-top);
     width: 100%;
-    height: 49vh;
+    min-height: 49vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,7 +384,6 @@ header {
 .states {
     position: relative;
     z-index: 1;
-    top: 2em;
     margin-top: 12vh;
 }
 
@@ -1373,6 +1377,11 @@ footer {
 /* Responsividade em Telas de 1180px */
 
 @media screen and (max-width: 1180px) {
+
+    .states {
+        margin-top: 8vh;
+    }
+
     .copyright {
         flex-direction: column;
     }
@@ -1558,7 +1567,7 @@ footer {
     }
 
     .federalistaTop {
-        height: 20vh;
+        min-height: 20vh;
     }
 
     .brasilia {
@@ -1567,6 +1576,7 @@ footer {
 
     .brasilia img {
         height: 2.5vh;
+        margin-top: 2vh;
     }
 
     .federalistaTop h1 {
@@ -1940,7 +1950,7 @@ footer {
 @media screen and (max-width: 768px) {
     .federalistaTop h1 {
         left: 50vw;
-        font-size: 10vw;
+        font-size: 10vw !important;
     }
 
     .tributario h1 {

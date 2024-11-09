@@ -622,6 +622,10 @@ header {
 }
 
 @media screen and (max-width: 1559px) {
+    .copyrightText p {
+        max-width: 39em;
+    }
+
     .imgLogoFederalista img {
         margin: 2em;
     }
@@ -631,10 +635,6 @@ header {
         max-width: 93vw;
     }
 
-    .quebraDeTexto {
-        width: 15em;
-        font-weight: bolder;
-    }
 
     .caneta {
         display: flex;
