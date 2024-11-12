@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* Fonts */
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-lt-w1g');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+
+/* Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* General Styles */
+
+
+.fade-left,
+.fade-right,
+.fade-up,
+.fade-down {
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    will-change: transform;
+}
+
+.fade-left {
+    transform: translateX(-20px);
+}
+
+.fade-right {
+    transform: translateX(20px);
+}
+
+.fade-up {
+    transform: translateY(20px);
+}
+
+.fade-down {
+    transform: translateY(-20px);
+}
+
+.show.fade-left,
+.show.fade-right,
+.show.fade-up,
+.show.fade-down {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0000002f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-header);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:focus {
+    border-radius: 20px;
+}
+
+
+@font-face {
+    font-family: "Taruno";
+    src: url(../font/taruno/Fontspring-DEMO-tarunowide-medium.otf);
+}
+
+:root {
+    --cor-header: #041229;
+    --montserrat: "Montserrat", sans-serif;
+    --garamond: "EB Garamond", serif;
+    --regular: 'Impact Regular';
+    --taruno: 'Taruno', sans-serif;
+    --meow: "Meow Script", cursive;
+    --federalista-top: #000E24;
+    --cor-federalista-top: #1651B8;
+    --branco: #F9F9FB;
+    --vermelho: #FF0000;
+    --amarelo: #FFBF00;
+}
+
+body {
+    color: #333;
+    font-family: "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    background: #fff;
+    margin: 0;
+    paddign: 0;
+}
+
+/* Style for text
+* --------------------------------------- */
+p {
+    color: #333;
+}
+
+/* Common styles
+* --------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+/*screen resolutions lower than 620px*/
+@media all and (max-width: 1180px) {
+    .wrap {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+
+#section h2 {
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+}
+
+#section p a {
+    color: #00B16A;
+    text-decoration: none;
+}
+
+form{
+    background: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+#section .wrap {
+    text-align: center;
+    width: 100%;
+}
+
+#section .box {
+    text-align: center;
+    margin: 5% 0 0 0;
+    width: 100%;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-form .input-block {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid var(--cor-header);
+    margin: 0;
+    position: relative;
+    margin-bottom: 20px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.focus {}
+
+.contact-form .input-block.textarea {
+    height: auto;
+}
+
+.contact-form .input-block.textarea .form-control {
+    height: auto;
+    resize: none;
+    color: #fff;
+}
+
+.contact-form .input-block label {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    z-index: 1;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.contact-form .input-block .form-control {
+    background-color: transparent;
+    margin: 0;
+    outline: none;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    padding: 30px 10px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-form .input-block .form-control:focus label {
+    top: 0;
+}
+
+.contact-form .square-button {
+    background-color: var(--cor-header);
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .square-button:hover,
+.contact-form .square-button:focus {
+    background-color: var(--cor-federalista-top);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+@media (min-width: 768px) {
+    .contact-wrap {
+        margin: auto;
+    }
+}
+
+@media (max-width: 868px) {
+    .contact-form {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+/*----page styles---*/
+
+.contact-wrap {
+    padding: 15px;
+}
+
+.contact-wrap h1 {
+    background-color: white;
+    color: #ff7c62;
+    padding: 40px;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-wrap h1 small {
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ff7c62;
+}

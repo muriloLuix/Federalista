@@ -1441,7 +1441,6 @@ footer {
 
     .refundarBrasil h1 {
         font-size: 3.5rem;
-        padding: 1rem 6rem;
     }
 
     .tributario h1 {
@@ -1761,10 +1760,6 @@ footer {
         height: 20em;
     }
 
-    .circleBlue span {
-        width: 36vw;
-    }
-
     .tributario h1 {
         font-size: 2.5rem !important;
     }
@@ -1925,7 +1920,7 @@ footer {
 
     .descriptionPoliticos p {
         padding: 0px 3rem;
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 
     .descriptionPoliticos2 ul {

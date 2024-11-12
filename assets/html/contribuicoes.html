@@ -10,6 +10,8 @@
     <!-- Script -->
     <script src="../js/menu.js" defer></script>
     <script src="../js/formated.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <script src="../js/form.js" defer></script>
     <!-- Script -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/header/logoFederalistaTopo.svg" type="image/x-icon">
@@ -59,7 +61,7 @@
                     <a href="https://www.movimentofederalista.org.br" target="_blank">
                         <li>Blog</li>
                     </a>
-                    <a href="">
+                    <a href="contato.html">
                         <li>Contato</li>
                     </a>
                     <a href="contribuicoes.html">
@@ -95,7 +97,7 @@
                             contribuição será no valor anotado, mas não obrigatória, enquanto o Federalista não estiver
                             formado como pessoa jurídica. A contribuição será recebida e gerida pelo Instituto
                             Federalista.</p>
-                        <form>
+                        <form id="myForm" action="https://formsubmit.co/muriloluiz654@gmail.com" method="POST">
                             <div class="group">
                                 <input type="text" name="nome"><span class="highlight"></span><span class="bar"></span>
                                 <label>Nome Completo</label>
@@ -106,11 +108,14 @@
                                 <label>RG</label>
                             </div>
                             <div class="group">
-                                <input type="text" name="uf"><span class="highlight"></span><span class="bar"></span>
+                                <input type="text" name="uf" maxlength="2" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+                                <span class="highlight"></span><span class="bar"></span>
                                 <label>UF</label>
                             </div>
+                            
                             <div class="group">
-                                <input type="text" name="cidade"><span class="highlight"></span><span class="bar"></span>
+                                <input type="text" name="cidade"><span class="highlight"></span><span
+                                    class="bar"></span>
                                 <label>Cidade</label>
                             </div>
                             <div class="group">
@@ -134,11 +139,22 @@
                                     class="bar"></span>
                                 <label>Observações</label>
                             </div>
-
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_replyto" value="muriloluiz654@gmail.com">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                             <button type="submit" class="button buttonBlue">Enviar
                                 <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
                             </button>
                         </form>
+                        <div id="thankYouModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal()">&times;</span>
+                                <h2>Parabéns pela Iniciativa!</h2>
+                                <p>Acompanhe atualizações em <a href="http://www.mf.org.br"
+                                        target="_blank">www.mf.org.br</a></p>
+                                <p>Vamos juntos refundar o Brasil!</p>
+                            </div>
+                        </div>
                         <div class="copyrightText">
                             <p>As informações serão mantidas em sigilo pelo gestor, em respeito à LGPD – Lei Geral de
                                 Proteção aos Dados. </p>

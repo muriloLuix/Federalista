@@ -451,19 +451,39 @@ input:focus~.highlight {
 
 /* Logo Federalista Style */
 
-.imgLogoFederalista {
+.imgLogoFederalista,
+.imagemArvore {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgLogoFederalista img {
+.imgLogoFederalista img,
+.imagemArvore img {
     width: 9em;
     height: 10em;
 }
 
 /* Logo Federalista Style */
 
+
+/* Span Style */
+
+.texts .underline{
+    text-decoration: underline;
+}
+
+.texts a{
+    color: #fff;
+}
+
+.texts .quemSomos{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+/* Span Style */
 /* General Styles */
 
 /* Header Style */
@@ -567,7 +587,7 @@ header {
 }
 
 .caneta p {
-    padding: 0px 0px 0px 19.7rem;
+    padding: 0px 0px 0px 20.7rem;
 }
 
 .caneta img {
@@ -843,3 +863,68 @@ footer {
 }
 
 /* Footer Style */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-50px);
+    opacity: 0;
+    height: 15em;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-content h2 {
+    font-family: var(--montserrat);
+    font-size: 1.8rem;
+    color: var(--cor-header);
+    text-align: left;
+    margin-top: 0;
+}
+
+.modal-content p,
+.modal-content a {
+    font-family: var(--montserrat);
+    font-size: 1.1rem;
+    color: var(--cor-header);
+    line-height: 1.6em;
+    text-align: left;
+    padding: 0px;
+}
+
+.close-btn {
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff6b6b;
+}
