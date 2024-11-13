@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Css -->
     <link rel="stylesheet" href="../css/sistemaTributario.css">
     <!-- Css -->
@@ -97,55 +98,77 @@
                             contribuição será no valor anotado, mas não obrigatória, enquanto o Federalista não estiver
                             formado como pessoa jurídica. A contribuição será recebida e gerida pelo Instituto
                             Federalista.</p>
-                        <form id="myForm" action="https://formsubmit.co/muriloluiz654@gmail.com" method="POST">
-                            <div class="group">
-                                <input type="text" name="nome"><span class="highlight"></span><span class="bar"></span>
-                                <label>Nome Completo</label>
+                        <div class="form-container">
+                            <form id="myForm" action="https://formsubmit.co/muriloluiz654@gmail.com" method="POST">
+                                <div class="group">
+                                    <input type="text" name="nome"><span class="highlight"></span><span
+                                        class="bar"></span>
+                                    <label>Nome Completo</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" id="rg" name="rg" oninput="formatRG()" maxlength="12"><span
+                                        class="highlight"></span><span class="bar"></span>
+                                    <label>RG</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" name="uf" maxlength="2"
+                                        oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+                                    <span class="highlight"></span><span class="bar"></span>
+                                    <label>UF</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" name="cidade"><span class="highlight"></span><span
+                                        class="bar"></span>
+                                    <label>Cidade</label>
+                                </div>
+                                <div class="group">
+                                    <input type="tel" id="celular" name="celular" oninput="formatCelular()"
+                                        maxlength="15"><span class="highlight"></span><span class="bar"></span>
+                                    <label>Celular</label>
+                                </div>
+                                <div class="group">
+                                    <input type="email" name="email"><span class="highlight"></span><span
+                                        class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" id="contribuicao" name="contribuicao"
+                                        oninput="formatContribuicao()"><span class="highlight"></span><span
+                                        class="bar"></span>
+                                    <label>Minha contribuição</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" name="observacoes"><span class="highlight"></span><span
+                                        class="bar"></span>
+                                    <label>Observações</label>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="muriloluiz654@gmail.com">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <button type="submit" class="button buttonBlue">Enviar
+                                    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                                </button>
+                            </form>
+
+                            <div class="form-info">
+                                <span class="textInfo">Para transferir sua contribuição para ajudar na Refundação do
+                                    Brasil via Pix use o QR code ou copie e cole no seu banco o código e escreva o
+                                    quanto deseja investir: </span>
+                                <img src="../img/PIX/QRCODE.jpeg" alt="QR Code" class="qr-code">
+                                <button class="copy-button" onclick="copiarCodigo()">Código copia e cola <i class="bi bi-link"></i></button>
+                                <span class="emailPix">contato@if.org.br</span>
                             </div>
-                            <div class="group">
-                                <input type="text" id="rg" name="rg" oninput="formatRG()" maxlength="12"><span
-                                    class="highlight"></span><span class="bar"></span>
-                                <label>RG</label>
-                            </div>
-                            <div class="group">
-                                <input type="text" name="uf" maxlength="2" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
-                                <span class="highlight"></span><span class="bar"></span>
-                                <label>UF</label>
-                            </div>
-                            
-                            <div class="group">
-                                <input type="text" name="cidade"><span class="highlight"></span><span
-                                    class="bar"></span>
-                                <label>Cidade</label>
-                            </div>
-                            <div class="group">
-                                <input type="tel" id="celular" name="celular" oninput="formatCelular()"
-                                    maxlength="15"><span class="highlight"></span><span class="bar"></span>
-                                <label>Celular</label>
-                            </div>
-                            <div class="group">
-                                <input type="email" name="email"><span class="highlight"></span><span
-                                    class="bar"></span>
-                                <label>Email</label>
-                            </div>
-                            <div class="group">
-                                <input type="text" id="contribuicao" name="contribuicao"
-                                    oninput="formatContribuicao()"><span class="highlight"></span><span
-                                    class="bar"></span>
-                                <label>Minha contribuição</label>
-                            </div>
-                            <div class="group">
-                                <input type="text" name="observacoes"><span class="highlight"></span><span
-                                    class="bar"></span>
-                                <label>Observações</label>
-                            </div>
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_replyto" value="muriloluiz654@gmail.com">
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                            <button type="submit" class="button buttonBlue">Enviar
-                                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-                            </button>
-                        </form>
+                        </div>
+
+                        <script>
+                            function copiarCodigo() {
+                                const codigo = "00020126390014br.gov.bcb.pix0117contato@if.org.br5204000053039865802BR5925INSTITUTO FEDERALISTA IFB6008CURITIBA62250521s10AOsVEU3XiUFHEsxwfE63047EB1";
+                                navigator.clipboard.writeText(codigo).then(() => {
+                                    alert("Código copiado para a área de transferência!");
+                                });
+                            }
+                        </script>
+
                         <div id="thankYouModal" class="modal">
                             <div class="modal-content">
                                 <span class="close-btn" onclick="closeModal()">&times;</span>
