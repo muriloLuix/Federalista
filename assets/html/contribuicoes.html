@@ -13,6 +13,7 @@
     <script src="../js/formated.js" defer></script>
     <script src="../js/modal.js" defer></script>
     <script src="../js/form.js" defer></script>
+    <script src="../js/copy.js" defer></script>
     <!-- Script -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/header/logoFederalistaTopo.svg" type="image/x-icon">
@@ -155,20 +156,11 @@
                                     Brasil via Pix use o QR code ou copie e cole no seu banco o código e escreva o
                                     quanto deseja investir: </span>
                                 <img src="../img/PIX/QRCODE.jpeg" alt="QR Code" class="qr-code">
-                                <button class="copy-button" onclick="copiarCodigo()">Código copia e cola <i class="bi bi-link"></i></button>
+                                <button class="copy-button" onclick="copiarCodigo()">Código copia e cola <i
+                                        class="bi bi-link"></i></button>
                                 <span class="emailPix">contato@if.org.br</span>
                             </div>
                         </div>
-
-                        <script>
-                            function copiarCodigo() {
-                                const codigo = "00020126390014br.gov.bcb.pix0117contato@if.org.br5204000053039865802BR5925INSTITUTO FEDERALISTA IFB6008CURITIBA62250521s10AOsVEU3XiUFHEsxwfE63047EB1";
-                                navigator.clipboard.writeText(codigo).then(() => {
-                                    alert("Código copiado para a área de transferência!");
-                                });
-                            }
-                        </script>
-
                         <div id="thankYouModal" class="modal">
                             <div class="modal-content">
                                 <span class="close-btn" onclick="closeModal()">&times;</span>
