@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/sistemaTributario.css">
+    <script src="../js/contact.js" defer></script>
+    <link rel="stylesheet" href="../css/contato.css">
+    <script src="../js/modal.js" defer></script>
+    <link rel="shortcut icon" href="../img/header/logoFederalistaTopo.svg" type="image/x-icon">
+    <title> Ação Federalista - Contato</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="imgFederalista">
+                <img src="../img/header/logoFederalistaTopo.svg" alt="">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="headerItens">
+                <ul>
+                    <a href="../../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="quemsomos.html">
+                        <li>Quem somos</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Programa</li>
+                    </a>
+                    <a href="estatuto.html">
+                        <li>Estatuto</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Manifesto</li>
+                    </a>
+                    <a href="credo.html">
+                        <li>Credo</li>
+                    </a>
+                    <a href="poemadamarca.html">
+                        <li>Poema da Marca</li>
+                    </a>
+                    <a href="constuction.html">
+                        <li>Material da divulgação</li>
+                    </a>
+                    <a href="https://www.movimentofederalista.org.br" target="_blank">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="contribuicoes.html">
+                        <li>Associa-se/Contribua</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blueSection">
+            <div class="generalDiv">
+                <div class="titleTop">
+                    <h1 data-text="AÇÃO FEDERALISTA">AÇÃO FEDERALISTA</h1>
+                </div>
+                <div class="bloco1">
+                    <div class="title">
+                        <h1>NOTÍCIAS</h1>
+                    </div>
+                    <section class="contact-wrap">
+                        <form id="myForm" action="https://formsubmit.co/boletim@federalista.org.br" method="POST"
+                            class="contact-form">
+                            <div class="col-sm-6">
+                                <div class="input-block">
+                                    <label for="">Nome</label>
+                                    <input type="text" class="form-control" name="nome">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="">Cidade/UF</label>
+                                    <input type="text" class="form-control" name="cidade">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-block">
+                                    <label for="">E-mail</label>
+                                    <input type="text" class="form-control" name="email">
+                                </div>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_replyto" value="boletim@federalista.org.br">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                            <div class="col-sm-12">
+                                <button type="submit" class="square-button">Enviar</button>
+                            </div>
+                        </form>
+                        <div id="thankYouModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal()">&times;</span>
+                                <h2>Parabéns pela Iniciativa!</h2>
+                                <p>Acompanhe atualizações em <a href="http://www.mf.org.br"
+                                        target="_blank">www.mf.org.br</a></p>
+                                <p>Vamos juntos refundar o Brasil!</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="federalista3D">
+                <img src="../img/footer/logoFederalista3D.svg" alt="Logo 3D federalista">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="home">
+            <a href="../../index.html" class="link">
+                <div class="svg">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13L1 7L7 1" stroke="#1651B8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="telaInicial">
+                    <span>Voltar a página inicial</span>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
