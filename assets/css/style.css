@@ -468,6 +468,13 @@ header {
     height: 38em !important;
 }
 
+.videoThomas p {
+    color: #fff;
+    font-family: var(--montserrat);
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Refundar o brasil */
 
 /* Circle Blue */
