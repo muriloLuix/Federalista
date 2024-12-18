@@ -34,7 +34,7 @@ body.no-scroll {
 /* General Style */
 
 .cookie-banner {
-    height: 15vh;
+    height: auto;
     width: 100%;
     background-color: #041229;
     /* Fundo azul escuro */
