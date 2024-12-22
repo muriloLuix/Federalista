@@ -10,6 +10,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     setTimeout(() => {
         event.target.submit();
     }, 1000);
+
+    setTimeout(() => {
+        window.location.href = "https://www.federalista.org.br";
+    }, 1500); // Ajusta o tempo para garantir que o formulário seja enviado antes do redirecionamento
 });
 
 // Função para fechar o modal
