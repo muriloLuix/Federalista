@@ -16,7 +16,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     }, 1500); // Ajusta o tempo para garantir que o formulário seja enviado antes do redirecionamento
 });
 
-
 // Função para fechar o modal
 function closeModal() {
     const modal = document.getElementById("thankYouModal");
