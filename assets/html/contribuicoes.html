@@ -107,7 +107,7 @@
                                     <label>Nome Completo</label>
                                 </div>
                                 <div class="group">
-                                    <input type="text" id="rg" name="rg" oninput="formatRG()" maxlength="12"><span
+                                    <input type="text" id="rg" name="rg" oninput="formatRG()" maxlength="13"><span
                                         class="highlight"></span><span class="bar"></span>
                                     <label>RG</label>
                                 </div>
@@ -134,9 +134,17 @@
                                 </div>
                                 <div class="group">
                                     <input type="text" id="contribuicao" name="contribuicao"
-                                        oninput="formatContribuicao()"><span class="highlight"></span><span
-                                        class="bar"></span>
+                                        oninput="formatContribuicao()">
+                                    <span class="highlight"></span><span class="bar"></span>
                                     <label>Minha contribuição</label>
+                                </div>
+
+                                <div class="button-group">
+                                    <button type="button" onclick="setContribuicao(1000)">R$ 10,00</button>
+                                    <button type="button" onclick="setContribuicao(2000)">R$ 20,00</button>
+                                    <button type="button" onclick="setContribuicao(3000)">R$ 30,00</button>
+                                    <button type="button" onclick="setContribuicao(5000)">R$ 50,00</button>
+                                    <button type="button" onclick="setContribuicao(10000)">R$ 100,00</button>
                                 </div>
                                 <div class="group">
                                     <input type="text" name="observacoes"><span class="highlight"></span><span
