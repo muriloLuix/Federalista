@@ -1,12 +1,33 @@
-document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
+document.getElementById("myForm").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
 
-    // Seleciona o modal
-    const modal = document.getElementById("thankYouModal");
+    // Captura os dados do formulário
+    const form = event.target;
+    const formData = new FormData(form);
 
-    // Mostra o modal e adiciona animação
-    modal.style.display = "block";
-    modal.querySelector(".modal-content").classList.add("show");
+    try {
+        // Envia o formulário via Fetch
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json",
+            },
+        });
+
+        // Exibe o modal
+        const modal = document.getElementById("thankYouModal");
+        modal.style.display = "block";
+        modal.querySelector(".modal-content").classList.add("show");
+
+        if (response.ok) {
+            console.log("Formulário enviado com sucesso!");
+        } else {
+            console.error("Houve um problema no envio do formulário.");
+        }
+    } catch (error) {
+        console.error("Erro ao enviar o formulário:", error);
+    }
 });
 
 // Função para fechar o modal
