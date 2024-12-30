@@ -30,6 +30,14 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.no-scroll {
+    overflow: hidden;
+    /* Bloqueia o scroll */
+    height: 100%;
+    /* Garante que o conteúdo não "salte" */
+}
+
+
 
 /* General Style */
 
@@ -276,32 +284,29 @@ header {
 
 .headerItens {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 100%;
-    flex-grow: 1;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
 }
 
 .headerItens ul {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 0.5em;
+    text-align: center;
 }
 
-.navigation ul {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    gap: 1em;
-    flex-wrap: wrap;
+.headerItens ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
+
+
+
 
 .navigation a {
     text-decoration: none;
@@ -310,42 +315,11 @@ header {
     white-space: nowrap;
 }
 
-.navigation ul li {
-    list-style-type: none;
-    color: #fff;
-    transition: all .3s ease;
-    flex-shrink: 1;
-}
-
 .navigation ul li:hover {
     list-style-type: none;
     color: #ffffffb9;
 }
 
-@media (max-width: 1024px) {
-    .navigation {
-        padding: 0 1em;
-    }
-
-    .headerItens ul {
-        gap: 0.5rem;
-    }
-
-    .navigation ul {
-        gap: 0.5em;
-        justify-content: space-evenly;
-    }
-
-    .navigation ul li {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 1267px) {
-    .navigation {
-        justify-content: center;
-    }
-}
 
 
 /* Header Style */
@@ -490,6 +464,8 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--montserrat);
+    position: relative;
+    z-index: 99;
 }
 
 .button-82-pushable {
@@ -1829,22 +1805,6 @@ footer {
     }
 
 
-    .navigation ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        gap: 0.5em;
-    }
-
-    .navigation ul li {
-        text-align: left;
-        width: 100%;
-        padding: 1em 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
     .navigation ul li:hover {
         color: #ffffffb9;
         background-color: rgba(255, 255, 255, 0.1);
@@ -1858,20 +1818,18 @@ footer {
         width: 30px;
         height: 30px;
         justify-content: space-between;
+        z-index: 102;
+        /* Mantém acima do menu fechado */
     }
 
     .hamburger div {
         height: 3px;
         background-color: #fff;
         transition: all 0.3s ease;
-        position: relative;
-        z-index: 101;
-
     }
 
     .hamburger.active div:nth-child(1) {
         transform: rotate(45deg);
-        position: relative;
         top: 10px;
     }
 
@@ -1881,12 +1839,11 @@ footer {
 
     .hamburger.active div:nth-child(3) {
         transform: rotate(-45deg);
-        position: relative;
         top: -10px;
     }
 
-    .navigation.open .headerItens {
-        display: flex;
+    .navigation.open {
+        display: flex; /* Mostra o menu quando aberto */
     }
 
     .imgFederalista {
@@ -2109,12 +2066,6 @@ footer {
 @media screen and (min-width: 1440px) {
     .terceiraImagemPoliticos {
         display: none;
-    }
-}
-
-@media screen and (max-width: 1416px) {
-    .navigation ul {
-        width: 66em;
     }
 }
 

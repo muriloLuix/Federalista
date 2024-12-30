@@ -3,17 +3,15 @@ function toggleMenu() {
     const headerItens = document.querySelector('.headerItens');
     const body = document.body; // Seleciona o elemento body
 
-
+    // Alterna o estado ativo do menu
     hamburger.classList.toggle('active');
-
-
     headerItens.classList.toggle('active');
 
     // Adiciona ou remove a classe 'no-scroll' ao body
     if (headerItens.classList.contains('active')) {
-        body.classList.add('no-scroll');
+        body.classList.add('no-scroll'); // Bloqueia o scroll
     } else {
-        body.classList.remove('no-scroll');
+        body.classList.remove('no-scroll'); // Libera o scroll
     }
 }
 
@@ -25,8 +23,9 @@ menuItems.forEach(item => {
         const hamburger = document.querySelector('.hamburger');
         const body = document.body;
 
+        // Fecha o menu ao clicar em um item
         headerItens.classList.remove('active');
         hamburger.classList.remove('active');
-        body.classList.remove('no-scroll');
+        body.classList.remove('no-scroll'); // Libera o scroll ao fechar o menu
     });
 });
